@@ -29,9 +29,10 @@ def get_driver(dirver_type="chrome"):
     return driver
 
 
-def quit_driver(driver):
+def quit_driver():
     log.info("Chrome driver quit.")
     driver.quit()
+
 #
 #
 #     /**

@@ -5,16 +5,29 @@
 
 import unittest
 
-from src.Module.exyz.script import login
+import ddt
+
+from src.module.exyz.script import login, follow_up_plan
 from src.common import driver_generator
 
 
-class Test(unittest.TestSuite):
+@ddt.ddt
+class Test(unittest.TestCase):
+
     def setUp(self):
-        pass
+        print("测试开始")
 
     def test_login(self):
-        login.login("18774388904", "Silvercrow@6133")
+        login.login("18888888888", "Yy@123456")
+        follow_up_plan.follow_up_plan_add()
 
     def tearDown(self):
-        driver_generator.quit_driver()
+        # driver_generator.quit_driver()
+        print("测试结束")
+
+
+if __name__ == '__main__':
+    suite = unittest.TestSuite()
+    suite.addTest(Test("test_login"))
+    runner = unittest.TextTestRunner()
+    runner.run(suite)

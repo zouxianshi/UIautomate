@@ -2,6 +2,8 @@
 # @Time : 2022/3/14 18:10 
 # @Author : crow
 # @File : follow_up_plan.py
+import time
+import unittest
 
 from selenium.webdriver import Keys
 from src.module.exyz.obj import mainpage_obj as mpo, template_obj as to, follow_up_plan_obj as tno
@@ -61,8 +63,7 @@ def follow_up_plan_add():
         # 保存
         ao.find_element(tno.bc).click()
         ao.find_element(tno.BC).click()
-        log.info("新建随访计划开始")
+        log.info("新建随访计划结束")
 
     except Exception as e:
         log.info(e)
-

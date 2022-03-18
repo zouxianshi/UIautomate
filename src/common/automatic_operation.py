@@ -4,6 +4,7 @@
 # @File : automatic_operation.py
 from time import sleep
 
+import func_timeout
 from func_timeout import func_set_timeout
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -54,8 +55,9 @@ def get_element(flag, loops, queue):
                     sleep(0.5)
                 else:
                     return queue.get(i).result()
-    except TimeoutError:
+    except func_timeout.exceptions.FunctionTimedOut as e:
         log.info("元素定位超时")
+        raise e
 
 
 def find_element(value):
