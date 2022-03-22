@@ -7,6 +7,7 @@ from time import sleep
 import func_timeout
 from func_timeout import func_set_timeout
 from selenium.webdriver.common.by import By
+from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from concurrent.futures import ThreadPoolExecutor, wait
@@ -60,7 +61,7 @@ def get_element(flag, loops, queue):
         raise e
 
 
-def find_element(value):
+def find_element(value) -> WebElement:
     try:
         for i in TYPE:
             future = pool.submit(findelement, i, value)
