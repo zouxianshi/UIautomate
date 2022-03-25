@@ -13,8 +13,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from concurrent.futures import ThreadPoolExecutor, wait
 import queue
 
-from common import driver_generator, constant
-from config import log
+from common import constant
+from config import log, driver_generator
 
 driver = driver_generator.get_driver()
 queue = queue.Queue(maxsize=10)
