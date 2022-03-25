@@ -2,13 +2,12 @@
 # @Time : 2022/3/14 18:10 
 # @Author : crow
 # @File : follow_up_plan.py
-import time
 import unittest
 
 import ddt
 from selenium.webdriver import Keys
-from src.module.cfs.obj import mainpage_obj as mpo, template_obj as to, follow_up_plan_obj as tno
-from src.common import automatic_operation as ao
+from module.cfs.obj import mainpage_obj as mpo, follow_up_plan_obj as tno, template_obj as to
+from common import automatic_operation as ao
 from config import log
 
 

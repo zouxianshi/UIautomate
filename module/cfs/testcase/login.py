@@ -4,8 +4,8 @@
 # @File : login.py
 import unittest
 
-from src.module.cfs.obj import login_obj
-from src.common import automatic_operation as ao
+from module.cfs.obj import login_obj
+from common import automatic_operation as ao
 from config import log
 
 

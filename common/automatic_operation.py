@@ -13,7 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from concurrent.futures import ThreadPoolExecutor, wait
 import queue
 
-from src.common import driver_generator, constant
+from common import driver_generator, constant
 from config import log
 
 driver = driver_generator.get_driver()

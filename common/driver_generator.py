@@ -1,7 +1,7 @@
 import platform
 
 from selenium import webdriver
-from src.common import constant
+from common import constant
 from config import log
 
 

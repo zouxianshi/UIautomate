@@ -4,7 +4,7 @@ SCREEN_SHOT_PATH = "snapshot"
 DRIVER_PATH_LINUX = "/usr/local/share/chromedriver"
 
 # windows下chromedriver安装路径
-DRIVER_PATH_WIN = r"D:\PycharmProjects\UIautomate\source\chromedriver.exe"
+DRIVER_PATH_WIN = r"/source/chromedriver.exe"
 
 # windows系统标识
 OS_WIN = "Windows"
