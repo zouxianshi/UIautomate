@@ -7,6 +7,7 @@ import unittest
 from module.cfs.obj import login_obj
 from common import automatic_operation as ao
 from config import log
+from config.driver_generator import quit_driver
 
 
 class test_login(unittest.TestCase):
@@ -23,3 +24,4 @@ class test_login(unittest.TestCase):
             log.info("登录成功")
         except Exception as e:
             log.info(e)
+            quit_driver()

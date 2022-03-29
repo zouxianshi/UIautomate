@@ -12,6 +12,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from concurrent.futures import ThreadPoolExecutor, wait
 import queue
+import logging
 
 from common import constant
 from config import log, driver_generator
@@ -19,7 +20,7 @@ from config import log, driver_generator
 driver = driver_generator.get_driver()
 queue = queue.Queue(maxsize=10)
 pool = ThreadPoolExecutor(max_workers=10)
-TYPE = (By.ID, By.XPATH)
+TYPE = ( By.XPATH)
 loops = range(len(TYPE))
 flag = True
 
@@ -36,13 +37,11 @@ def wait():
 
 
 def findelement(t, v):
-    wait()
     result = WebDriverWait(driver, 10).until(EC.presence_of_element_located((t, v)))
     return result
 
 
 def findelements(t, v):
-    wait()
     results = WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located((t, v)))
     return results
 
@@ -52,13 +51,14 @@ def get_element(flag, loops, queue):
     try:
         while flag:
             for i in loops:
-                if queue.get(i) is None:
-                    sleep(0.5)
-                else:
-                    return queue.get(i).result()
-    except func_timeout.exceptions.FunctionTimedOut as e:
+                # log.info(queue.get(i))
+                # if queue.get(i).result() is not None:
+                #     log.info(queue.get(i).result())
+                logger.info(queue.get(i).result()+',................')
+                return queue.get(i).result()
+                # else:
+    except func_timeout.exceptions.FunctionTimedOut:
         log.info("元素定位超时")
-        raise e
 
 
 def find_element(value) -> WebElement:
@@ -67,6 +67,7 @@ def find_element(value) -> WebElement:
             future = pool.submit(findelement, i, value)
             queue.put(future)
         element = get_element(flag, loops, queue)
+        log.info(element)
         return element
     except Exception as e:
         log.info(f"元素定位失败,{value}\r\n{e}")
@@ -75,8 +76,7 @@ def find_element(value) -> WebElement:
 def find_elements(value):
     try:
         for i in TYPE:
-            future = pool.submit(findelements, i, value)
-            queue.put(future)
+            queue.put(pool.submit(findelements, i, value))
         elements = get_element(flag, loops, queue)
         return elements
     except Exception as e:
