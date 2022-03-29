@@ -54,7 +54,7 @@ def get_element(flag, loops, queue):
                 # log.info(queue.get(i))
                 # if queue.get(i).result() is not None:
                 #     log.info(queue.get(i).result())
-                logger.info(queue.get(i).result()+',................')
+                logging.info(queue.get(i).result()+',................')
                 return queue.get(i).result()
                 # else:
     except func_timeout.exceptions.FunctionTimedOut:
