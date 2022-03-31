@@ -12,7 +12,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from concurrent.futures import ThreadPoolExecutor, wait
 import queue
-import logging
 
 from common import constant
 from config import log, driver_generator
@@ -20,7 +19,7 @@ from config import log, driver_generator
 driver = driver_generator.get_driver()
 queue = queue.Queue(maxsize=10)
 pool = ThreadPoolExecutor(max_workers=10)
-TYPE = ( By.XPATH)
+TYPE = [By.ID, By.XPATH, By.NAME, By.CSS_SELECTOR]
 loops = range(len(TYPE))
 flag = True
 
@@ -36,29 +35,30 @@ def wait():
     driver.implicitly_wait(constant.ELEMENT_WAIT_TIME)
 
 
-def findelement(t, v):
-    result = WebDriverWait(driver, 10).until(EC.presence_of_element_located((t, v)))
-    return result
+def findelement(t, v) -> WebElement:
+    resulta = WebDriverWait(driver, 10).until(EC.presence_of_element_located((t, v)))
+    return resulta
 
 
-def findelements(t, v):
+def findelements(t, v) -> WebElement:
     results = WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located((t, v)))
     return results
 
 
 @func_set_timeout(5)
-def get_element(flag, loops, queue):
+def get_element(flag, loops, queue) -> WebElement:
     try:
         while flag:
             for i in loops:
-                # log.info(queue.get(i))
-                # if queue.get(i).result() is not None:
-                #     log.info(queue.get(i).result())
-                logging.info(queue.get(i).result()+',................')
-                return queue.get(i).result()
-                # else:
-    except func_timeout.exceptions.FunctionTimedOut:
-        log.info("元素定位超时")
+                try:
+                    result = queue.get(i).result()
+                    if result is not None:
+                        log.info(result)
+                        return result
+                except Exception:
+                    pass
+    except Exception as e:
+        log.info(e)
 
 
 def find_element(value) -> WebElement:
@@ -73,7 +73,7 @@ def find_element(value) -> WebElement:
         log.info(f"元素定位失败,{value}\r\n{e}")
 
 
-def find_elements(value):
+def find_elements(value) -> WebElement:
     try:
         for i in TYPE:
             queue.put(pool.submit(findelements, i, value))
