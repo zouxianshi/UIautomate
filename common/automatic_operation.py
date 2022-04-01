@@ -2,15 +2,13 @@
 # @Time : 2022/3/2 20:32 
 # @Author : crow
 # @File : automatic_operation.py
-from time import sleep
 
-import func_timeout
 from func_timeout import func_set_timeout
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from concurrent.futures import ThreadPoolExecutor, wait
+from concurrent.futures import ThreadPoolExecutor
 import queue
 
 from common import constant
@@ -53,7 +51,6 @@ def get_element(flag, loops, queue) -> WebElement:
                 try:
                     result = queue.get(i).result()
                     if result is not None:
-                        log.info(result)
                         return result
                 except Exception:
                     pass
@@ -67,7 +64,6 @@ def find_element(value) -> WebElement:
             future = pool.submit(findelement, i, value)
             queue.put(future)
         element = get_element(flag, loops, queue)
-        log.info(element)
         return element
     except Exception as e:
         log.info(f"元素定位失败,{value}\r\n{e}")
