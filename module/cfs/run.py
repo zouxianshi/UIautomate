@@ -3,6 +3,9 @@
 # @Author : crow
 # @File : run.py
 import unittest
+from datetime import datetime
+
+from pip._vendor import requests
 
 from common import automatic_operation
 from config import log
@@ -20,9 +23,15 @@ def test_suite1():
 
 
 if __name__ == '__main__':
-    try:
-        test_suite1()
-    except Exception as e:
-        log.info(e)
-    finally:
-        automatic_operation.quit_driver()
+    url = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=edd0497d-9aa7-4196-9498-a4e32a4ab41e'  # 机器人的webhook地址
+    headers = {'Content-type': 'application/json'}
+    data = {
+        "msgtype": "text",
+        "text": {
+            "content": "test",  # x为要发送的文字
+            "mentioned_list": ["@all"]  # 可指定人
+        }  # 更多用途可查询企业微信官方
+    }
+    resp = requests.post(url, headers=headers, json=data)
+    print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), resp.text)
+    resp.close()
