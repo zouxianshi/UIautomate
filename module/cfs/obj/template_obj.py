@@ -4,4 +4,4 @@
 # @File : template_obj.py
 
 # 新建button
-xinjian_xpath = "//*[@id=\"root\"]//span[contains(text(),\"+新建\")]"
+xinjian_xpath = '//*[@id="root"]//span[contains(text(),"+新建")]'

@@ -22,7 +22,7 @@ CHROME_SILENCE_MODE = "--headless"
 CHROME_MAX_WINDOW = "--start-maximized"
 
 # 元素等待时间
-ELEMENT_WAIT_TIME = 20
+ELEMENT_WAIT_TIME = 5000
 
 # 显示分辨率横坐标
 DIMENSION_FULLSCREEN_X = 1366

@@ -34,16 +34,18 @@ def wait():
 
 
 def findelement(t, v) -> WebElement:
-    resulta = WebDriverWait(driver, 10).until(EC.presence_of_element_located((t, v)))
-    return resulta
+    wait()
+    result = WebDriverWait(driver, constant.ELEMENT_WAIT_TIME).until(EC.presence_of_element_located((t, v)))
+    return result
 
 
 def findelements(t, v) -> WebElement:
-    results = WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located((t, v)))
+    wait()
+    results = WebDriverWait(driver, constant.ELEMENT_WAIT_TIME).until(EC.presence_of_all_elements_located((t, v)))
     return results
 
 
-@func_set_timeout(5)
+@func_set_timeout(10)
 def get_element(flag, loops, queue) -> WebElement:
     try:
         while flag:

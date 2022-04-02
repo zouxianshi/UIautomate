@@ -8,9 +8,11 @@ from module.cfs.obj import login_obj
 from common import automatic_operation as ao
 from config import log
 from config.driver_generator import quit_driver
+import allure
 
 
 class test_login(unittest.TestCase):
+    @allure.step("步骤一:登录")
     def test_login(self, username="18900000001", pwd="Yy@123456"):
         try:
             log.info("开始登陆")

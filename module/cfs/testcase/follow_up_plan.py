@@ -3,6 +3,7 @@
 # @Author : crow
 # @File : follow_up_plan.py
 import unittest
+from time import sleep
 
 import ddt
 from selenium.webdriver import Keys
@@ -68,7 +69,7 @@ class test_follow_up_plan(unittest.TestCase):
             log.info("新建随访计划结束")
 
         except Exception as e:
-            log.info(e)
+            raise e
 
     def test_edit(self):
         pass
