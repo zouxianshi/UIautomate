@@ -4,6 +4,9 @@
 # @File : run.py
 import unittest
 
+from common import automatic_operation
+from config import log
+
 loader = unittest.TestLoader()
 suite = unittest.TestSuite()
 runner = unittest.TextTestRunner(verbosity=2)
@@ -17,4 +20,9 @@ def test_suite1():
 
 
 if __name__ == '__main__':
-    test_suite1()
+    try:
+        test_suite1()
+    except Exception as e:
+        log.info(e)
+    finally:
+        automatic_operation.quit_driver()

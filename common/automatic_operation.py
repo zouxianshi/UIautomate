@@ -2,6 +2,9 @@
 # @Time : 2022/3/2 20:32 
 # @Author : crow
 # @File : automatic_operation.py
+import os
+import time
+from pathlib import Path
 
 from func_timeout import func_set_timeout
 from selenium.webdriver.common.by import By
@@ -26,7 +29,8 @@ def get_url(url):
     try:
         driver.get(url)
     except Exception as e:
-        log.info(f"Get url: {url} failed." + e)
+        log.info(f"Get url: {url} failed.")
+        raise e
 
 
 def wait():
@@ -57,7 +61,7 @@ def get_element(flag, loops, queue) -> WebElement:
                 except Exception:
                     pass
     except Exception as e:
-        log.info(e)
+        raise e
 
 
 def find_element(value) -> WebElement:
@@ -68,7 +72,8 @@ def find_element(value) -> WebElement:
         element = get_element(flag, loops, queue)
         return element
     except Exception as e:
-        log.info(f"元素定位失败,{value}\r\n{e}")
+        log.info(f"元素定位失败,{value}")
+        raise e
 
 
 def find_elements(value) -> WebElement:
@@ -78,4 +83,23 @@ def find_elements(value) -> WebElement:
         elements = get_element(flag, loops, queue)
         return elements
     except Exception as e:
-        log.info(f"元素定位失败,{value}\r\n{e}")
+        log.info(f"元素定位失败,{value}")
+        raise e
+
+
+def screen_shot():
+    # 执行屏幕截图操作
+    try:
+        scrpath = os.path.abspath('.') + '\\screenshot\\'
+        if Path(scrpath).is_dir():  # 判断文件夹路径是否已经存在
+            pass
+        else:
+            Path(scrpath).mkdir()  # 如果不存在，创建文件夹
+        name = scrpath + time.strftime('%Y%m%d%H%M%S', time.localtime()) + '.png'
+        driver.get_screenshot_as_file(name)
+    except Exception as e:
+        raise e
+
+
+def quit_driver():
+    driver.quit()

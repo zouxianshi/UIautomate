@@ -17,6 +17,7 @@ class test_login(unittest.TestCase):
         try:
             log.info("开始登陆")
             ao.get_url("https://ucfs.med.gzhc365.com/merchant/#/login")
+
             ao.find_element(login_obj.userName_Xpath).click()
             ao.find_element(login_obj.userName_Xpath).send_keys(username)
             ao.find_element(login_obj.pwd_Xpath).click()
@@ -27,5 +28,6 @@ class test_login(unittest.TestCase):
             # ao.find_element(login_obj.cgr_Xpath).click()
             log.info("登录成功")
         except Exception as e:
-            log.info(e)
-            quit_driver()
+            ao.screen_shot()
+            log.info("登录失败")
+            raise e

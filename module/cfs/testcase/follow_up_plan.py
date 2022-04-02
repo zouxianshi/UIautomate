@@ -3,8 +3,8 @@
 # @Author : crow
 # @File : follow_up_plan.py
 import unittest
-from time import sleep
 
+import allure
 import ddt
 from selenium.webdriver import Keys
 from module.cfs.obj import mainpage_obj as mpo, follow_up_plan_obj as tno, template_obj as to
@@ -15,6 +15,7 @@ from config import log
 # 新增随访计划
 @ddt.ddt
 class test_follow_up_plan(unittest.TestCase):
+    @allure.story("添加随访计划")
     def test_add(self):
         log.info("新建随访计划开始")
         try:
@@ -69,6 +70,8 @@ class test_follow_up_plan(unittest.TestCase):
             log.info("新建随访计划结束")
 
         except Exception as e:
+            ao.screen_shot()
+            log.info("新建随访计划失败")
             raise e
 
     def test_edit(self):
