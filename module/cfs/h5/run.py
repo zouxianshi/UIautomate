@@ -2,12 +2,11 @@
 # @Time : 2022/3/21 16:55 
 # @Author : crow
 # @File : run.py
+
 import unittest
 
 from config import log
 from config.driver_generator import quit_driver
-from datetime import datetime
-from pip._vendor import requests
 
 loader = unittest.TestLoader()
 suite = unittest.TestSuite()
@@ -15,7 +14,6 @@ runner = unittest.TextTestRunner(verbosity=2)
 
 
 def test_suite1():
-
     case_1 = loader.loadTestsFromName('testcase.login.test_login.test_login')
     case_2 = loader.loadTestsFromName('testcase.follow_up_plan.test_follow_up_plan.test_add')
     suite.addTests([case_1, case_2])
@@ -29,9 +27,6 @@ if __name__ == '__main__':
         log.info(e)
     finally:
         quit_driver()
-
-
-
 
     # url = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=edd0497d-9aa7-4196-9498-a4e32a4ab41e'  # 机器人的webhook地址
     # headers = {'Content-type': 'application/json'}

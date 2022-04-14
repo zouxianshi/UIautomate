@@ -5,16 +5,14 @@
 import unittest
 
 import allure
-import ddt
 from selenium.webdriver import Keys
-from module.cfs.merchant.obj import mainpage_obj as mpo
-from module.cfs.merchant.obj import follow_up_plan_obj as tno, template_obj as to
+from module.cfs.h5.obj import mainpage_obj as mpo
+from module.cfs.h5.obj import follow_up_plan_obj as tno, template_obj as to
 from common import automatic_operation as ao
 from config import log
 
 
 # 新增随访计划
-@ddt.ddt
 class test_follow_up_plan(unittest.TestCase):
     @allure.story("添加随访计划")
     def test_add(self):

@@ -4,7 +4,7 @@
 # @File : login.py
 import unittest
 
-from module.cfs.merchant.obj import login_obj
+from module.cfs.h5.obj import login_obj
 from common import automatic_operation as ao
 from config import log
 import allure
