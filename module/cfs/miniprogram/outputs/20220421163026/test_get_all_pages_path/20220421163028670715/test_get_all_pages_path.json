@@ -1,0 +1,117 @@
+{
+    "case_name": "test_get_all_pages_path",
+    "run_time": "20220421 16:30:28",
+    "test_type": "AppTest",
+    "case_doc": null,
+    "success": true,
+    "failures": "",
+    "errors": "",
+    "start_timestamp": 1650529828.671704,
+    "is_failure": false,
+    "is_error": false,
+    "module": "D:.PycharmProjects.UIautomate.module.cfs.app.run",
+    "package": "module.cfs",
+    "failed_line_num": -1,
+    "device": {
+        "system_info": {
+            "model": "iPhone 12/13 Pro Max",
+            "pixelRatio": 3,
+            "windowWidth": 428,
+            "windowHeight": 753,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 428,
+            "screenHeight": 926,
+            "SDKVersion": "2.23.2",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 43,
+            "statusBarHeight": 47,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 44,
+                "left": 0,
+                "right": 428,
+                "bottom": 892,
+                "width": 428,
+                "height": 848
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 3,
+            "mode": "default"
+        }
+    },
+    "log_filename": "test_get_all_pages_path.log",
+    "error_type": "",
+    "error_value": "",
+    "error_stages": [],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/home/home/index",
+            "path": "images\\setup.png",
+            "ts": 1650529829,
+            "datetime": "2022-04-21 16:30:29"
+        },
+        {
+            "name": "teardown",
+            "url": "/package1/pages/classroom/search/index",
+            "path": "images\\teardown.png",
+            "ts": 1650529835,
+            "datetime": "2022-04-21 16:30:35"
+        }
+    ],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "page_data": {
+        "TYPE_METHOD_MAP": {
+            "1": {
+                "placeholder": "\u641c\u7d22\u75be\u75c5",
+                "listName": "diseaseName",
+                "listType": "diseaseList"
+            },
+            "2": {
+                "placeholder": "\u641c\u7d22\u79d1\u5ba4",
+                "listName": "deptName",
+                "listType": "deptList"
+            },
+            "3": {
+                "placeholder": "\u641c\u7d22\u75be\u75c5/\u95ee\u9898",
+                "listName": "title",
+                "listType": "classList"
+            }
+        },
+        "value": "\u5fc3\u8840\u7ba1",
+        "pageNum": 1,
+        "numPerPage": 10,
+        "totalCount": 0,
+        "searchType": "3"
+    },
+    "stop_timestamp": 1650529835.7097743,
+    "appId": "wx45cfec5a12afe345",
+    "appName": "\u76ca\u5fc3\u80fd\u62a4",
+    "source": {
+        "code": [
+            "    def test_get_all_pages_path(self):\n",
+            "        self.app.redirect_to(\"/pages/home/home/index\")\n",
+            "        self.page.get_element(idx.cxkp).click()\n",
+            "        self.page.get_element(idx.ssk).input(\"\u5fc3\u8840\u7ba1\")\n",
+            "        self.page.get_element(\"view.article-video-wrapper\").click()\n"
+        ],
+        "start": 6
+    },
+    "filename": "test_get_all_pages_path.json"
+}

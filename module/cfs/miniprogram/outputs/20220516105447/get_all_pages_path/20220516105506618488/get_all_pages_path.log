@@ -1,0 +1,84 @@
+DEBUG 2022-05-16 10:55:06,619 minitest.py _miniSetUp      286 =========Current case：get_all_pages_path=========
+INFO  2022-05-16 10:55:06,620 app.py     relaunch        306 ReLaunch: /pages/home/home/index
+DEBUG 2022-05-16 10:55:06,620 connection.py send            183 SEND > {"id":"bbe365a3-4178-430e-b371-81dbf778afb0","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-05-16 10:55:06,645 connection.py _on_message     232 RECV < {"id":"bbe365a3-4178-430e-b371-81dbf778afb0","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-05-16 10:55:07,040 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/home/home/index","query":{},"openType":"reLaunch","__ts__":1652669707028},1652669707028]}}
+INFO  2022-05-16 10:55:07,041 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1652669707028}, 1652669707028]}
+INFO  2022-05-16 10:55:07,042 minitest.py capture         548 capture setup.png
+DEBUG 2022-05-16 10:55:07,043 connection.py send            183 SEND > {"id":"c30c0067-8364-400f-a902-8dbaec430ffd","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-05-16 10:55:07,270 connection.py _on_message     230 RECV < {"id":"c30c0067-8364-400f-a902-8dbaec430ffd","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAA6oAAAZFCAIAAACvNLm5AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvVmTJUd2JnaOe6x3vzfXytqrAFQVUOgG0GgA3U32ylWc5mK0IedBsjFSpnmQ6UF/QDavMpPM9DwmSmMmm+F0N4cjDmeapNgbGo0G2GhsjbXWrCUrs3K/e6zufvQQy703K6uQWahC3szyg8LJ73q4n/Dw8PD44sQJd/zcj/49AAAAIhKRxhprrLHGGmusscYaH2DMZ/7lHwMAIEC6SWONNdZYY4011lhjjQ8sZgCAiECAiBprrLHGGmusscYaa3ywMUNEItJaa6211lprrbXWWutHQbM9r4HWWmuttdZaa6211lp/Zho//+O/JCAEBAAA0FhjjTXWWGONNdZY4wOMGREhIBEBgMYaa6yxxhprrLHGGh9sjJ...
+INFO  2022-05-16 10:55:07,293 app.py     redirect_to     288 RedirectTo: /pages/home/home/index
+DEBUG 2022-05-16 10:55:07,294 connection.py send            183 SEND > {"id":"3a416d07-a6c8-4ad9-bac2-5b72f89e3d10","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-05-16 10:55:07,419 connection.py _on_message     232 RECV < {"id":"3a416d07-a6c8-4ad9-bac2-5b72f89e3d10","result":{"result":{"errMsg":"redirectTo:ok"}}}
+DEBUG 2022-05-16 10:55:07,692 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":5,"path":"pages/home/home/index","query":{},"openType":"redirectTo","__ts__":1652669707650},1652669707650]}}
+INFO  2022-05-16 10:55:07,693 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 5, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'redirectTo', '__ts__': 1652669707650}, 1652669707650]}
+DEBUG 2022-05-16 10:55:07,694 connection.py send            183 SEND > {"id":"3216c632-0424-4ac6-8ca4-a528507a6a5b","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-05-16 10:55:07,704 connection.py _on_message     232 RECV < {"id":"3216c632-0424-4ac6-8ca4-a528507a6a5b","result":{"pageId":5,"path":"pages/home/home/index","query":{}}}
+INFO  2022-05-16 10:55:07,705 page.py    _get_elements_by_css 445 try to get elements: view.search-box[text(contains("查询科普"))]
+DEBUG 2022-05-16 10:55:07,706 connection.py send            183 SEND > {"id":"dc0fff91-453a-45d1-b950-09c8b61e89b9","method":"Page.getElements","params":{"selector":"view.search-box[text(contains(\"\u67e5\u8be2\u79d1\u666e\"))]","pageId":5}}
+DEBUG 2022-05-16 10:55:07,716 connection.py _on_message     232 RECV < {"id":"dc0fff91-453a-45d1-b950-09c8b61e89b9","result":{"elements":[{"elementId":"8cade2e4-6350-4937-b0e6-b585f49efc8d","tagName":"view"}]}}
+INFO  2022-05-16 10:55:08,722 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001DD0CE339D0>]
+DEBUG 2022-05-16 10:55:08,722 connection.py send            183 SEND > {"id":"0285499c-9a8b-4182-bbd0-6571b65f05b4","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"8cade2e4-6350-4937-b0e6-b585f49efc8d","pageId":5}}
+DEBUG 2022-05-16 10:55:08,726 connection.py _on_message     232 RECV < {"id":"0285499c-9a8b-4182-bbd0-6571b65f05b4","result":{"styles":["auto"]}}
+DEBUG 2022-05-16 10:55:08,727 connection.py send            183 SEND > {"id":"406afd83-7b9a-4948-8094-be5d6284cdaa","method":"Element.tap","params":{"elementId":"8cade2e4-6350-4937-b0e6-b585f49efc8d","pageId":5}}
+DEBUG 2022-05-16 10:55:08,767 connection.py _on_message     232 RECV < {"id":"406afd83-7b9a-4948-8094-be5d6284cdaa","result":{}}
+DEBUG 2022-05-16 10:55:09,731 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"},"openType":"navigateTo","__ts__":1652669709701},1652669709701]}}
+INFO  2022-05-16 10:55:09,732 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'package1/pages/classroom/search/index', 'query': {'searchType': '3'}, 'openType': 'navigateTo', '__ts__': 1652669709701}, 1652669709701]}
+DEBUG 2022-05-16 10:55:09,771 connection.py send            183 SEND > {"id":"37d32156-3035-489c-a831-7b95d46ae4a1","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-05-16 10:55:09,838 connection.py _on_message     232 RECV < {"id":"37d32156-3035-489c-a831-7b95d46ae4a1","result":{"pageId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+INFO  2022-05-16 10:55:09,839 page.py    _get_elements_by_css 445 try to get elements: input.search-box[text(contains("搜索疾病/问题"))]
+DEBUG 2022-05-16 10:55:09,839 connection.py send            183 SEND > {"id":"b3600688-c04f-4cbe-850e-194e3065d64b","method":"Page.getElements","params":{"selector":"input.search-box[text(contains(\"\u641c\u7d22\u75be\u75c5/\u95ee\u9898\"))]","pageId":6}}
+DEBUG 2022-05-16 10:55:09,897 connection.py _on_message     232 RECV < {"id":"b3600688-c04f-4cbe-850e-194e3065d64b","result":{"elements":[{"elementId":"d560eacc-aa88-4edc-bead-f06f6bab8d3c","tagName":"input"}]}}
+ERROR 2022-05-16 10:55:10,845 connection.py _on_error       265 [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+INFO  2022-05-16 10:55:10,847 connection.py _ws_run_forever 151 websocket run forever shutdown
+INFO  2022-05-16 10:55:10,906 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x000001DD0CE32B00>]
+DEBUG 2022-05-16 10:55:10,907 connection.py send            183 SEND > {"id":"d1c3f2fc-d9e2-4bc8-90bf-8d3c809efb41","method":"Element.callFunction","params":{"functionName":"input.input","args":["\u5fc3\u8840\u7ba1"],"elementId":"d560eacc-aa88-4edc-bead-f06f6bab8d3c","pageId":6}}
+DEBUG 2022-05-16 10:55:10,911 minitest.py _miniTearDown   512 =========Current case Down：get_all_pages_path=========
+INFO  2022-05-16 10:55:10,913 minitest.py capture         548 capture teardown.png
+DEBUG 2022-05-16 10:55:10,913 connection.py send            183 SEND > {"id":"6550b2da-4a18-4d7b-8054-477b8ab1801c","method":"App.captureScreenshot","params":{}}
+ERROR 2022-05-16 10:55:10,914 minitest.py _miniTearDown   524 Connection is already closed.
+Traceback (most recent call last):
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\framework\minitest.py", line 520, in _miniTearDown
+    self.capture("teardown")
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\framework\minitest.py", line 549, in capture
+    self.native.screen_shot(path)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\native\wx_native\idenative.py", line 28, in screen_shot
+    self.mini.app.screen_shot(filename, return_format)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 135, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\app.py", line 136, in screen_shot
+    b64_data = self.connection.send("App.captureScreenshot").get("result").get("data")
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 184, in send
+    self._send(message)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 154, in _send
+    return self._client.send(message)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\websocket\_app.py", line 204, in send
+    raise WebSocketConnectionClosedException(
+websocket._exceptions.WebSocketConnectionClosedException: Connection is already closed.
+ERROR 2022-05-16 10:55:10,938 assertbase.py _teardown_collect 267 <bound method AppTest.get_all_pages_path of <testcase.mini.AppTest testMethod=get_all_pages_path>>
+Traceback (most recent call last):
+  File "C:\Python310\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 86, in run
+    self._callTestMethod(testMethod)
+  File "C:\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "D:\PycharmProjects\UIautomate\module\cfs\miniprogram\testcase\mini.py", line 16, in get_all_pages_path
+    self.page.get_element(idx.ssk).input("心血管")
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 135, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\element.py", line 699, in input
+    self.call_func(func, args=[value])
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 135, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\element.py", line 212, in call_func
+    return self._send("Element.callFunction", {"functionName": func, "args": args}).result
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\element.py", line 538, in _send
+    return self.connection.send(method, params)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 184, in send
+    self._send(message)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 154, in _send
+    return self._client.send(message)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\websocket\_app.py", line 204, in send
+    raise WebSocketConnectionClosedException(
+websocket._exceptions.WebSocketConnectionClosedException: Connection is already closed.

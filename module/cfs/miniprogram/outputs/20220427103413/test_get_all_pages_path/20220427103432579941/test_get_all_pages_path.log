@@ -1,0 +1,55 @@
+DEBUG 2022-04-27 10:34:32,583 minitest.py _miniSetUp      286 =========Current case：test_get_all_pages_path=========
+INFO  2022-04-27 10:34:32,584 app.py     relaunch        306 ReLaunch: /pages/home/home/index
+DEBUG 2022-04-27 10:34:32,585 connection.py send            183 SEND > {"id":"72f822d8-35ab-422a-ba87-1aef93b0bb63","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-04-27 10:34:32,619 connection.py _on_message     232 RECV < {"id":"72f822d8-35ab-422a-ba87-1aef93b0bb63","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-04-27 10:34:33,605 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/home/home/index","query":{},"openType":"reLaunch","__ts__":1651026873537},1651026873537]}}
+INFO  2022-04-27 10:34:33,605 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1651026873537}, 1651026873537]}
+INFO  2022-04-27 10:34:33,613 minitest.py capture         548 capture setup.png
+DEBUG 2022-04-27 10:34:33,613 connection.py send            183 SEND > {"id":"6ef64b39-f413-46bf-b9f1-cba29f12706a","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-04-27 10:34:33,933 connection.py _on_message     230 RECV < {"id":"6ef64b39-f413-46bf-b9f1-cba29f12706a","result":{"data":"iVBORw0KGgoAAAANSUhEUgAABC4AAAdbCAIAAAD2Sm0eAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3eeTHdl5Jvj3PS7NzWvLogqm4Zrt2c2mlTQyM7uKnVFM7E5sxG7EftiN2H9tY2VXmoid0MaIClGiKNE12Wy1YaOBbrhCoVDu2rTH7ocsoNEcioQhqgHyfT48+N2qi5v35K2qqKxzMw++9nf/NwAAACKGEMhkMplMJpPJZDL5GMzX/o//GSgUCoVCoVAoFArleMMAABGpqampqampqampqamPs/GL3/rjEAIihACISCaTyWQymUwmk8nHYBZCQMT7Pkcmk8lkMplMJpPJT9z3ZkUQAACATCaTyWQymUwmk4/B92ZFwr3PkclkMplMJpPJZPKTNn7xW38MFAqFQqFQKBQKhXK8Ye1xSRsymUwmk8lkMplMPh...
+INFO  2022-04-27 10:34:33,933 app.py     redirect_to     288 RedirectTo: /pages/home/home/index
+DEBUG 2022-04-27 10:34:33,933 connection.py send            183 SEND > {"id":"90d6b779-c1f6-4e48-86ac-0b47baa35256","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-04-27 10:34:33,957 connection.py _on_message     232 RECV < {"id":"90d6b779-c1f6-4e48-86ac-0b47baa35256","result":{"result":{"errMsg":"redirectTo:ok"}}}
+DEBUG 2022-04-27 10:34:34,552 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":5,"path":"pages/home/home/index","query":{},"openType":"redirectTo","__ts__":1651026874505},1651026874505]}}
+INFO  2022-04-27 10:34:34,552 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 5, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'redirectTo', '__ts__': 1651026874505}, 1651026874505]}
+DEBUG 2022-04-27 10:34:34,552 connection.py send            183 SEND > {"id":"1881452f-1cad-4a82-bbd0-9192cfea1152","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-27 10:34:34,560 connection.py _on_message     232 RECV < {"id":"1881452f-1cad-4a82-bbd0-9192cfea1152","result":{"pageId":5,"path":"pages/home/home/index","query":{}}}
+INFO  2022-04-27 10:34:34,568 page.py    _get_elements_by_css 445 try to get elements: view.search-box[text(contains("查询科普"))]
+DEBUG 2022-04-27 10:34:34,568 connection.py send            183 SEND > {"id":"7a4c2901-d24f-4fc5-af81-e0ee0bc1a653","method":"Page.getElements","params":{"selector":"view.search-box[text(contains(\"\u67e5\u8be2\u79d1\u666e\"))]","pageId":5}}
+DEBUG 2022-04-27 10:34:34,583 connection.py _on_message     232 RECV < {"id":"7a4c2901-d24f-4fc5-af81-e0ee0bc1a653","result":{"elements":[{"elementId":"7d4f308e-fb32-4f51-bef9-8c4c67e59bff","tagName":"view"}]}}
+INFO  2022-04-27 10:34:35,596 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002233F3E6C50>]
+DEBUG 2022-04-27 10:34:35,596 connection.py send            183 SEND > {"id":"58fcc96a-a0c5-4909-b24a-4397663f6ac5","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"7d4f308e-fb32-4f51-bef9-8c4c67e59bff","pageId":5}}
+DEBUG 2022-04-27 10:34:35,603 connection.py _on_message     232 RECV < {"id":"58fcc96a-a0c5-4909-b24a-4397663f6ac5","result":{"styles":["auto"]}}
+DEBUG 2022-04-27 10:34:35,603 connection.py send            183 SEND > {"id":"3b915ed8-d55b-44cf-b70c-e850dcbd1887","method":"Element.tap","params":{"elementId":"7d4f308e-fb32-4f51-bef9-8c4c67e59bff","pageId":5}}
+DEBUG 2022-04-27 10:34:35,688 connection.py _on_message     232 RECV < {"id":"3b915ed8-d55b-44cf-b70c-e850dcbd1887","result":{}}
+DEBUG 2022-04-27 10:34:36,703 connection.py send            183 SEND > {"id":"7e59a6b5-9dab-46a1-b86f-23df5f576d42","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-27 10:34:36,704 connection.py _on_message     232 RECV < {"id":"7e59a6b5-9dab-46a1-b86f-23df5f576d42","result":{"pageId":5,"path":"pages/home/home/index","query":{}}}
+INFO  2022-04-27 10:34:36,704 page.py    _get_elements_by_css 445 try to get elements: input.search-box[text(contains("搜索疾病/问题"))]
+DEBUG 2022-04-27 10:34:36,704 connection.py send            183 SEND > {"id":"849f03d3-ec38-4214-8b2b-65707f58f9e5","method":"Page.getElements","params":{"selector":"input.search-box[text(contains(\"\u641c\u7d22\u75be\u75c5/\u95ee\u9898\"))]","pageId":5}}
+DEBUG 2022-04-27 10:34:36,720 connection.py _on_message     232 RECV < {"id":"849f03d3-ec38-4214-8b2b-65707f58f9e5","result":{"elements":[]}}
+DEBUG 2022-04-27 10:34:37,128 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"},"openType":"navigateTo","__ts__":1651026877072},1651026877072]}}
+INFO  2022-04-27 10:34:37,128 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'package1/pages/classroom/search/index', 'query': {'searchType': '3'}, 'openType': 'navigateTo', '__ts__': 1651026877072}, 1651026877072]}
+WARNI 2022-04-27 10:34:37,725 page.py    _get_elements_by_css 450 Could not found any element 'input.search-box[text(contains("搜索疾病/问题"))]' you need
+DEBUG 2022-04-27 10:34:37,725 minitest.py _miniTearDown   512 =========Current case Down：test_get_all_pages_path=========
+INFO  2022-04-27 10:34:37,740 minitest.py capture         548 capture teardown.png
+DEBUG 2022-04-27 10:34:37,740 connection.py send            183 SEND > {"id":"2c0eaa19-6be7-4488-9fe7-e0c74d9b0ec8","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-04-27 10:34:38,036 connection.py _on_message     230 RECV < {"id":"2c0eaa19-6be7-4488-9fe7-e0c74d9b0ec8","result":{"data":"iVBORw0KGgoAAAANSUhEUgAABC4AAAgoCAIAAACNtGKYAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3X1Q1Gea//uL7gYbaKCF5kkbtVWIOGLEBHdwojkhFbOSktRojdmYjdasO2VNWbtWbWp3flNb+0vlbG3NyW5lT7lT1pQn685JsnFWU3EqpIITp0JOYiKJRHHEiNJqq7TQQAMNNPC16Yfzx5dneVT0bvT9qvmDQD/cNq3z/fR9X9cVE4lE5FHVGQxc7eu+rvlv3e71BPq8/ZovGPCHgrfDoWAk/Oi+LgAAAJg9MSKmGMM8g9FiNFlNcbZYc1Zc/MJ5CUvMlmXxSSmmONULVCbmUYsizYG+M91tf/K3X+jxuW/3qF4OAAAAHmn2eYmrEq2PW1KfSErLjItXvZwH6lGJIjc0/xe+5q87my/1dg5902wwLo9Pds...
+DEBUG 2022-04-27 10:34:38,044 connection.py send            183 SEND > {"id":"ec681ca5-e288-4e75-9943-dda3223ee451","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-27 10:34:38,044 connection.py _on_message     232 RECV < {"id":"ec681ca5-e288-4e75-9943-dda3223ee451","result":{"pageId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+DEBUG 2022-04-27 10:34:38,044 connection.py send            183 SEND > {"id":"6a823bd4-2403-4f4a-b20f-50f1623e7b41","method":"Page.getData","params":{"pageId":6}}
+DEBUG 2022-04-27 10:34:38,052 connection.py _on_message     232 RECV < {"id":"6a823bd4-2403-4f4a-b20f-50f1623e7b41","result":{"data":{"TYPE_METHOD_MAP":{"1":{"placeholder":"搜索疾病","listName":"diseaseName","listType":"diseaseList"},"2":{"placeholder":"搜索科室","listName":"deptName","listType":"deptList"},"3":{"placeholder":"搜索疾病/问题","listName":"title","listType":"classList"}},"value":"","pageNum":1,"numPerPage":10,"totalCount":0,"searchType":"3"}}}
+ERROR 2022-04-27 10:34:38,084 assertbase.py _teardown_collect 267 <bound method AppTest.test_get_all_pages_path of <module.cfs.app.run.AppTest testMethod=test_get_all_pages_path>>
+Traceback (most recent call last):
+  File "C:\Python310\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 86, in run
+    self._callTestMethod(testMethod)
+  File "C:\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "D:\PycharmProjects\UIautomate\module\cfs\app\run.py", line 9, in test_get_all_pages_path
+    self.page.get_element(idx.ssk).input("心血管")
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 135, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 214, in get_element
+    raise MiniElementNotFoundError("element[%s] not found" % selector)
+minium.framework.exception.MiniElementNotFoundError: element[input.search-box[text(contains("搜索疾病/问题"))]] not found

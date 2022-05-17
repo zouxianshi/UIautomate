@@ -1,0 +1,148 @@
+DEBUG 2022-05-13 16:12:22,909 minitest.py _miniSetUp      286 =========Current case：get_all_pages_path=========
+INFO  2022-05-13 16:12:22,909 app.py     relaunch        306 ReLaunch: /pages/home/home/index
+DEBUG 2022-05-13 16:12:22,910 connection.py send            183 SEND > {"id":"56839f42-44da-45e8-a58a-d4c48365c642","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-05-13 16:12:22,942 connection.py _on_message     232 RECV < {"id":"56839f42-44da-45e8-a58a-d4c48365c642","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-05-13 16:12:22,942 connection.py _on_message     232 RECV < {"id":"56839f42-44da-45e8-a58a-d4c48365c642","result":{"result":{"errMsg":"reLaunch:ok"}}}
+WARNI 2022-05-13 16:12:22,943 connection.py _on_message     241 received async msg: 56839f42-44da-45e8-a58a-d4c48365c642
+DEBUG 2022-05-13 16:12:23,576 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/home/home/index","query":{},"openType":"reLaunch","__ts__":1652429543551},1652429543551]}}
+DEBUG 2022-05-13 16:12:23,576 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/home/home/index","query":{},"openType":"reLaunch","__ts__":1652429543551},1652429543551]}}
+INFO  2022-05-13 16:12:23,577 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1652429543551}, 1652429543551]}
+INFO  2022-05-13 16:12:23,578 minitest.py capture         548 capture setup.png
+DEBUG 2022-05-13 16:12:23,579 connection.py send            183 SEND > {"id":"ee233c66-15ea-4e3f-8b4c-7d1f9a0dd067","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-05-13 16:12:23,843 connection.py _on_message     230 RECV < {"id":"ee233c66-15ea-4e3f-8b4c-7d1f9a0dd067","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAA6oAAAZFCAIAAACvNLm5AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvVmTJUd2JnaOe6x3vzfXytqrAFQVUOgG0GgA3U32ylWc5mK0IedBsjFSpnmQ6UF/QDavMpPM9DwmSmMmm+F0N4cjDmeapNgbGo0G2GhsjbXWrCUrs3K/e6zufvQQy703K6uQWahC3szyg8LJ73q4n/Dw8PD44sQJd/zcj/49AAAAIhKRxhprrLHGGmusscYaH2DMZ/7lHwMAIEC6SWONNdZYY4011lhjjQ8sZgCAiECAiBprrLHGGmusscYaa3ywMUNEItJaa6211lprrbXWWutHQbM9r4HWWmuttdZaa6211lp/Zho//+O/JCAEBAAA0FhjjTXWWGONNdZY4wOMGREhIBEBgMYaa6yxxhprrLHGGh9sjJ...
+DEBUG 2022-05-13 16:12:23,892 connection.py _on_message     230 RECV < {"id":"ee233c66-15ea-4e3f-8b4c-7d1f9a0dd067","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAA6oAAAZFCAIAAACvNLm5AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvVmTJUd2JnaOe6x3vzfXytqrAFQVUOgG0GgA3U32ylWc5mK0IedBsjFSpnmQ6UF/QDavMpPM9DwmSmMmm+F0N4cjDmeapNgbGo0G2GhsjbXWrCUrs3K/e6zufvQQy703K6uQWahC3szyg8LJ73q4n/Dw8PD44sQJd/zcj/49AAAAIhKRxhprrLHGGmusscYaH2DMZ/7lHwMAIEC6SWONNdZYY4011lhjjQ8sZgCAiECAiBprrLHGGmusscYaa3ywMUNEItJaa6211lprrbXWWutHQbM9r4HWWmuttdZaa6211lp/Zho//+O/JCAEBAAA0FhjjTXWWGONNdZY4wOMGREhIBEBgMYaa6yxxhprrLHGGh9sjJ...
+WARNI 2022-05-13 16:12:23,892 connection.py _on_message     241 received async msg: ee233c66-15ea-4e3f-8b4c-7d1f9a0dd067
+INFO  2022-05-13 16:12:23,906 app.py     redirect_to     288 RedirectTo: /pages/home/home/index
+DEBUG 2022-05-13 16:12:23,906 connection.py send            183 SEND > {"id":"e8370636-40f6-4bf1-9de7-0b768a0361a2","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-05-13 16:12:24,013 connection.py _on_message     232 RECV < {"id":"e8370636-40f6-4bf1-9de7-0b768a0361a2","result":{"result":{"errMsg":"redirectTo:ok"}}}
+DEBUG 2022-05-13 16:12:24,013 connection.py _on_message     232 RECV < {"id":"e8370636-40f6-4bf1-9de7-0b768a0361a2","result":{"result":{"errMsg":"redirectTo:ok"}}}
+WARNI 2022-05-13 16:12:24,014 connection.py _on_message     241 received async msg: e8370636-40f6-4bf1-9de7-0b768a0361a2
+DEBUG 2022-05-13 16:12:24,341 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":5,"path":"pages/home/home/index","query":{},"openType":"redirectTo","__ts__":1652429544313},1652429544313]}}
+DEBUG 2022-05-13 16:12:24,342 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":5,"path":"pages/home/home/index","query":{},"openType":"redirectTo","__ts__":1652429544313},1652429544313]}}
+INFO  2022-05-13 16:12:24,342 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 5, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'redirectTo', '__ts__': 1652429544313}, 1652429544313]}
+DEBUG 2022-05-13 16:12:24,342 connection.py send            183 SEND > {"id":"d04332f6-dbac-4cb7-ad9f-f714ade3c241","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-05-13 16:12:24,351 connection.py _on_message     232 RECV < {"id":"d04332f6-dbac-4cb7-ad9f-f714ade3c241","result":{"pageId":5,"path":"pages/home/home/index","query":{}}}
+DEBUG 2022-05-13 16:12:24,352 connection.py _on_message     232 RECV < {"id":"d04332f6-dbac-4cb7-ad9f-f714ade3c241","result":{"pageId":5,"path":"pages/home/home/index","query":{}}}
+INFO  2022-05-13 16:12:24,353 page.py    _get_elements_by_css 445 try to get elements: view.search-box[text(contains("查询科普"))]
+WARNI 2022-05-13 16:12:24,353 connection.py _on_message     241 received async msg: d04332f6-dbac-4cb7-ad9f-f714ade3c241
+DEBUG 2022-05-13 16:12:24,353 connection.py send            183 SEND > {"id":"9a0349d4-762e-4e8c-b6d8-9e6cb36f954d","method":"Page.getElements","params":{"selector":"view.search-box[text(contains(\"\u67e5\u8be2\u79d1\u666e\"))]","pageId":5}}
+DEBUG 2022-05-13 16:12:24,362 connection.py _on_message     232 RECV < {"id":"9a0349d4-762e-4e8c-b6d8-9e6cb36f954d","result":{"elements":[{"elementId":"e4a741ee-b493-485b-a19c-fd1c4ac163db","tagName":"view"}]}}
+DEBUG 2022-05-13 16:12:24,363 connection.py _on_message     232 RECV < {"id":"9a0349d4-762e-4e8c-b6d8-9e6cb36f954d","result":{"elements":[{"elementId":"e4a741ee-b493-485b-a19c-fd1c4ac163db","tagName":"view"}]}}
+WARNI 2022-05-13 16:12:24,364 connection.py _on_message     241 received async msg: 9a0349d4-762e-4e8c-b6d8-9e6cb36f954d
+INFO  2022-05-13 16:12:25,369 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000137506A2CB0>]
+DEBUG 2022-05-13 16:12:25,369 connection.py send            183 SEND > {"id":"27bdef81-d635-4ad7-9a38-13b09c0e7006","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"e4a741ee-b493-485b-a19c-fd1c4ac163db","pageId":5}}
+DEBUG 2022-05-13 16:12:25,373 connection.py _on_message     232 RECV < {"id":"27bdef81-d635-4ad7-9a38-13b09c0e7006","result":{"styles":["auto"]}}
+DEBUG 2022-05-13 16:12:25,373 connection.py _on_message     232 RECV < {"id":"27bdef81-d635-4ad7-9a38-13b09c0e7006","result":{"styles":["auto"]}}
+WARNI 2022-05-13 16:12:25,373 connection.py _on_message     241 received async msg: 27bdef81-d635-4ad7-9a38-13b09c0e7006
+DEBUG 2022-05-13 16:12:25,374 connection.py send            183 SEND > {"id":"d3592b0d-e148-4bc6-8d3f-a801fdfdf074","method":"Element.tap","params":{"elementId":"e4a741ee-b493-485b-a19c-fd1c4ac163db","pageId":5}}
+DEBUG 2022-05-13 16:12:25,418 connection.py _on_message     232 RECV < {"id":"d3592b0d-e148-4bc6-8d3f-a801fdfdf074","result":{}}
+DEBUG 2022-05-13 16:12:25,418 connection.py _on_message     232 RECV < {"id":"d3592b0d-e148-4bc6-8d3f-a801fdfdf074","result":{}}
+WARNI 2022-05-13 16:12:25,419 connection.py _on_message     241 received async msg: d3592b0d-e148-4bc6-8d3f-a801fdfdf074
+DEBUG 2022-05-13 16:12:26,265 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"},"openType":"navigateTo","__ts__":1652429546231},1652429546231]}}
+DEBUG 2022-05-13 16:12:26,265 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"},"openType":"navigateTo","__ts__":1652429546231},1652429546231]}}
+INFO  2022-05-13 16:12:26,266 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 6, 'path': 'package1/pages/classroom/search/index', 'query': {'searchType': '3'}, 'openType': 'navigateTo', '__ts__': 1652429546231}, 1652429546231]}
+DEBUG 2022-05-13 16:12:26,431 connection.py send            183 SEND > {"id":"1b029d71-e33a-4993-be6e-41dd933d76a4","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-05-13 16:12:26,436 connection.py _on_message     232 RECV < {"id":"1b029d71-e33a-4993-be6e-41dd933d76a4","result":{"pageId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+DEBUG 2022-05-13 16:12:26,436 connection.py _on_message     232 RECV < {"id":"1b029d71-e33a-4993-be6e-41dd933d76a4","result":{"pageId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+WARNI 2022-05-13 16:12:26,437 connection.py _on_message     241 received async msg: 1b029d71-e33a-4993-be6e-41dd933d76a4
+INFO  2022-05-13 16:12:26,438 page.py    _get_elements_by_css 445 try to get elements: input.search-box[text(contains("搜索疾病/问题"))]
+DEBUG 2022-05-13 16:12:26,439 connection.py send            183 SEND > {"id":"d97dedcc-0a33-49a1-9b61-8d7fe94cd3f3","method":"Page.getElements","params":{"selector":"input.search-box[text(contains(\"\u641c\u7d22\u75be\u75c5/\u95ee\u9898\"))]","pageId":6}}
+DEBUG 2022-05-13 16:12:26,446 connection.py _on_message     232 RECV < {"id":"d97dedcc-0a33-49a1-9b61-8d7fe94cd3f3","result":{"elements":[{"elementId":"eb9a032f-1efa-4679-a93c-0b7afbfaf0f6","tagName":"input"}]}}
+DEBUG 2022-05-13 16:12:26,447 connection.py _on_message     232 RECV < {"id":"d97dedcc-0a33-49a1-9b61-8d7fe94cd3f3","result":{"elements":[{"elementId":"eb9a032f-1efa-4679-a93c-0b7afbfaf0f6","tagName":"input"}]}}
+WARNI 2022-05-13 16:12:26,449 connection.py _on_message     241 received async msg: d97dedcc-0a33-49a1-9b61-8d7fe94cd3f3
+INFO  2022-05-13 16:12:27,458 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x00000137506A3FA0>]
+DEBUG 2022-05-13 16:12:27,459 connection.py send            183 SEND > {"id":"a220e38e-7a88-48df-a9ac-a52487802521","method":"Element.callFunction","params":{"functionName":"input.input","args":["\u5fc3\u8840\u7ba1"],"elementId":"eb9a032f-1efa-4679-a93c-0b7afbfaf0f6","pageId":6}}
+DEBUG 2022-05-13 16:12:27,475 connection.py _on_message     232 RECV < {"id":"a220e38e-7a88-48df-a9ac-a52487802521","result":{}}
+DEBUG 2022-05-13 16:12:27,476 connection.py _on_message     232 RECV < {"id":"a220e38e-7a88-48df-a9ac-a52487802521","result":{}}
+WARNI 2022-05-13 16:12:27,476 connection.py _on_message     241 received async msg: a220e38e-7a88-48df-a9ac-a52487802521
+DEBUG 2022-05-13 16:12:27,477 connection.py send            183 SEND > {"id":"261e3552-4814-47a2-a8b7-191d7fa13aad","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-05-13 16:12:27,480 connection.py _on_message     232 RECV < {"id":"261e3552-4814-47a2-a8b7-191d7fa13aad","result":{"pageId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+DEBUG 2022-05-13 16:12:27,481 connection.py _on_message     232 RECV < {"id":"261e3552-4814-47a2-a8b7-191d7fa13aad","result":{"pageId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+WARNI 2022-05-13 16:12:27,482 connection.py _on_message     241 received async msg: 261e3552-4814-47a2-a8b7-191d7fa13aad
+INFO  2022-05-13 16:12:27,483 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:12:27,483 connection.py send            183 SEND > {"id":"d796c5e0-4892-4cf7-ac8c-677d5ae265fd","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":6}}
+DEBUG 2022-05-13 16:12:27,487 connection.py _on_message     232 RECV < {"id":"d796c5e0-4892-4cf7-ac8c-677d5ae265fd","result":{"elements":[]}}
+DEBUG 2022-05-13 16:12:27,488 connection.py _on_message     232 RECV < {"id":"d796c5e0-4892-4cf7-ac8c-677d5ae265fd","result":{"elements":[]}}
+WARNI 2022-05-13 16:12:27,489 connection.py _on_message     241 received async msg: d796c5e0-4892-4cf7-ac8c-677d5ae265fd
+WARNI 2022-05-13 16:12:28,500 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-05-13 16:12:28,763 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:12:28,764 connection.py send            183 SEND > {"id":"59304c8e-cc4d-4b10-a42e-2b6dd60fa998","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":6}}
+DEBUG 2022-05-13 16:12:28,766 connection.py _on_message     232 RECV < {"id":"59304c8e-cc4d-4b10-a42e-2b6dd60fa998","result":{"elements":[]}}
+DEBUG 2022-05-13 16:12:28,766 connection.py _on_message     232 RECV < {"id":"59304c8e-cc4d-4b10-a42e-2b6dd60fa998","result":{"elements":[]}}
+WARNI 2022-05-13 16:12:28,767 connection.py _on_message     241 received async msg: 59304c8e-cc4d-4b10-a42e-2b6dd60fa998
+WARNI 2022-05-13 16:12:29,777 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-05-13 16:12:30,040 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:12:30,040 connection.py send            183 SEND > {"id":"3abcffaa-c910-4a5f-8e2f-50c5b706067b","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":6}}
+DEBUG 2022-05-13 16:12:30,043 connection.py _on_message     232 RECV < {"id":"3abcffaa-c910-4a5f-8e2f-50c5b706067b","result":{"elements":[]}}
+DEBUG 2022-05-13 16:12:30,043 connection.py _on_message     232 RECV < {"id":"3abcffaa-c910-4a5f-8e2f-50c5b706067b","result":{"elements":[]}}
+WARNI 2022-05-13 16:12:30,044 connection.py _on_message     241 received async msg: 3abcffaa-c910-4a5f-8e2f-50c5b706067b
+WARNI 2022-05-13 16:12:31,055 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-05-13 16:12:31,305 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:12:31,305 connection.py send            183 SEND > {"id":"df2a4ba6-15aa-4c34-9188-044e812cfc5a","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":6}}
+DEBUG 2022-05-13 16:12:31,308 connection.py _on_message     232 RECV < {"id":"df2a4ba6-15aa-4c34-9188-044e812cfc5a","result":{"elements":[]}}
+DEBUG 2022-05-13 16:12:31,308 connection.py _on_message     232 RECV < {"id":"df2a4ba6-15aa-4c34-9188-044e812cfc5a","result":{"elements":[]}}
+WARNI 2022-05-13 16:12:31,309 connection.py _on_message     241 received async msg: df2a4ba6-15aa-4c34-9188-044e812cfc5a
+WARNI 2022-05-13 16:12:32,319 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-05-13 16:12:32,585 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:12:32,585 connection.py send            183 SEND > {"id":"51f6b938-ca63-4244-ad55-e6a2fbb429b5","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":6}}
+DEBUG 2022-05-13 16:12:32,588 connection.py _on_message     232 RECV < {"id":"51f6b938-ca63-4244-ad55-e6a2fbb429b5","result":{"elements":[]}}
+DEBUG 2022-05-13 16:12:32,589 connection.py _on_message     232 RECV < {"id":"51f6b938-ca63-4244-ad55-e6a2fbb429b5","result":{"elements":[]}}
+WARNI 2022-05-13 16:12:32,589 connection.py _on_message     241 received async msg: 51f6b938-ca63-4244-ad55-e6a2fbb429b5
+WARNI 2022-05-13 16:12:33,598 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-05-13 16:12:33,862 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:12:33,862 connection.py send            183 SEND > {"id":"532135f0-9225-4837-8763-86088d2f3d89","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":6}}
+DEBUG 2022-05-13 16:12:33,865 connection.py _on_message     232 RECV < {"id":"532135f0-9225-4837-8763-86088d2f3d89","result":{"elements":[]}}
+DEBUG 2022-05-13 16:12:33,865 connection.py _on_message     232 RECV < {"id":"532135f0-9225-4837-8763-86088d2f3d89","result":{"elements":[]}}
+WARNI 2022-05-13 16:12:33,865 connection.py _on_message     241 received async msg: 532135f0-9225-4837-8763-86088d2f3d89
+WARNI 2022-05-13 16:12:34,870 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-05-13 16:12:35,134 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:12:35,134 connection.py send            183 SEND > {"id":"1af43fe4-9b01-4369-a030-f5ac8c31e99b","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":6}}
+DEBUG 2022-05-13 16:12:35,137 connection.py _on_message     232 RECV < {"id":"1af43fe4-9b01-4369-a030-f5ac8c31e99b","result":{"elements":[]}}
+DEBUG 2022-05-13 16:12:35,137 connection.py _on_message     232 RECV < {"id":"1af43fe4-9b01-4369-a030-f5ac8c31e99b","result":{"elements":[]}}
+WARNI 2022-05-13 16:12:35,138 connection.py _on_message     241 received async msg: 1af43fe4-9b01-4369-a030-f5ac8c31e99b
+WARNI 2022-05-13 16:12:36,146 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-05-13 16:12:36,411 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:12:36,411 connection.py send            183 SEND > {"id":"cba5b459-1ced-4d39-a391-83e10af43eba","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":6}}
+DEBUG 2022-05-13 16:12:36,414 connection.py _on_message     232 RECV < {"id":"cba5b459-1ced-4d39-a391-83e10af43eba","result":{"elements":[]}}
+DEBUG 2022-05-13 16:12:36,414 connection.py _on_message     232 RECV < {"id":"cba5b459-1ced-4d39-a391-83e10af43eba","result":{"elements":[]}}
+WARNI 2022-05-13 16:12:36,414 connection.py _on_message     241 received async msg: cba5b459-1ced-4d39-a391-83e10af43eba
+WARNI 2022-05-13 16:12:37,422 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+DEBUG 2022-05-13 16:12:37,686 connection.py send            183 SEND > {"id":"7093770e-ebc5-424f-973d-1d5c787735ef","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-05-13 16:12:37,688 connection.py _on_message     232 RECV < {"id":"7093770e-ebc5-424f-973d-1d5c787735ef","result":{"pageId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+DEBUG 2022-05-13 16:12:37,688 connection.py _on_message     232 RECV < {"id":"7093770e-ebc5-424f-973d-1d5c787735ef","result":{"pageId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+INFO  2022-05-13 16:12:37,689 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+WARNI 2022-05-13 16:12:37,689 connection.py _on_message     241 received async msg: 7093770e-ebc5-424f-973d-1d5c787735ef
+DEBUG 2022-05-13 16:12:37,689 connection.py send            183 SEND > {"id":"9d22c883-1fa5-4737-b3e5-1ad2635e0cbb","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":6}}
+DEBUG 2022-05-13 16:12:37,692 connection.py _on_message     232 RECV < {"id":"9d22c883-1fa5-4737-b3e5-1ad2635e0cbb","result":{"elements":[]}}
+DEBUG 2022-05-13 16:12:37,692 connection.py _on_message     232 RECV < {"id":"9d22c883-1fa5-4737-b3e5-1ad2635e0cbb","result":{"elements":[]}}
+WARNI 2022-05-13 16:12:37,692 connection.py _on_message     241 received async msg: 9d22c883-1fa5-4737-b3e5-1ad2635e0cbb
+WARNI 2022-05-13 16:12:38,697 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+DEBUG 2022-05-13 16:12:38,698 minitest.py _miniTearDown   512 =========Current case Down：get_all_pages_path=========
+INFO  2022-05-13 16:12:38,705 minitest.py capture         548 capture teardown.png
+DEBUG 2022-05-13 16:12:38,707 connection.py send            183 SEND > {"id":"67856fc3-fa63-480c-b221-b1b1242cc3cb","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-05-13 16:12:38,825 connection.py _on_message     230 RECV < {"id":"67856fc3-fa63-480c-b221-b1b1242cc3cb","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAA6oAAAcSCAIAAAAYyIpCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3X1wndV96Pvfep79Lm29W5JlySBsbJxgAoTe2p6hp5iSDqRkJqZJBrucacZJp+e4ZeYEJ517cJkMhd5pAzkzKentNKHpbWoyaYozkzTm3uTgpKW1oUlsExOMibGMJVuvW9qS9vvzdv9YthB+le0tPVta388fiZC29l6Cbeu7117PWioIAlnSThSn3ylOv1vOnSkXRiqlcbc87TlFz3MDf4n/5AAAAJegRCLKStp22o62ROLtsURXPHVDvH5VMn1TMh326OaXWpL5e6ww+bPpzOFc5kguW/TdsIcDAACwaCStyPr6ptvrW+9Kt65NNYY9nOpbUvl7rDD54+zQv2WHTpcLM59cEU+tTjbcmKjvjqc6YsnWaD...
+DEBUG 2022-05-13 16:12:38,842 connection.py _on_message     230 RECV < {"id":"67856fc3-fa63-480c-b221-b1b1242cc3cb","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAA6oAAAcSCAIAAAAYyIpCAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3X1wndV96Pvfep79Lm29W5JlySBsbJxgAoTe2p6hp5iSDqRkJqZJBrucacZJp+e4ZeYEJ517cJkMhd5pAzkzKentNKHpbWoyaYozkzTm3uTgpKW1oUlsExOMibGMJVuvW9qS9vvzdv9YthB+le0tPVta388fiZC29l6Cbeu7117PWioIAlnSThSn3ylOv1vOnSkXRiqlcbc87TlFz3MDf4n/5AAAAJegRCLKStp22o62ROLtsURXPHVDvH5VMn1TMh326OaXWpL5e6ww+bPpzOFc5kguW/TdsIcDAACwaCStyPr6ptvrW+9Kt65NNYY9nOpbUvl7rDD54+zQv2WHTpcLM59cEU+tTjbcmKjvjqc6YsnWaD...
+WARNI 2022-05-13 16:12:38,843 connection.py _on_message     241 received async msg: 67856fc3-fa63-480c-b221-b1b1242cc3cb
+DEBUG 2022-05-13 16:12:38,843 connection.py send            183 SEND > {"id":"ac8daece-b9df-488b-b92c-d74f924d6ce8","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-05-13 16:12:38,845 connection.py _on_message     232 RECV < {"id":"ac8daece-b9df-488b-b92c-d74f924d6ce8","result":{"pageId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+DEBUG 2022-05-13 16:12:38,845 connection.py _on_message     232 RECV < {"id":"ac8daece-b9df-488b-b92c-d74f924d6ce8","result":{"pageId":6,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+WARNI 2022-05-13 16:12:38,846 connection.py _on_message     241 received async msg: ac8daece-b9df-488b-b92c-d74f924d6ce8
+DEBUG 2022-05-13 16:12:38,846 connection.py send            183 SEND > {"id":"306094e5-cfab-42c1-9db1-e3dcd52ed68f","method":"Page.getData","params":{"pageId":6}}
+DEBUG 2022-05-13 16:12:38,848 connection.py _on_message     232 RECV < {"id":"306094e5-cfab-42c1-9db1-e3dcd52ed68f","result":{"data":{"TYPE_METHOD_MAP":{"1":{"placeholder":"搜索疾病","listName":"diseaseName","listType":"diseaseList"},"2":{"placeholder":"搜索科室","listName":"deptName","listType":"deptList"},"3":{"placeholder":"搜索疾病/问题","listName":"title","listType":"classList"}},"value":"心血管","pageNum":1,"numPerPage":10,"totalCount":0,"searchType":"3"}}}
+DEBUG 2022-05-13 16:12:38,848 connection.py _on_message     232 RECV < {"id":"306094e5-cfab-42c1-9db1-e3dcd52ed68f","result":{"data":{"TYPE_METHOD_MAP":{"1":{"placeholder":"搜索疾病","listName":"diseaseName","listType":"diseaseList"},"2":{"placeholder":"搜索科室","listName":"deptName","listType":"deptList"},"3":{"placeholder":"搜索疾病/问题","listName":"title","listType":"classList"}},"value":"心血管","pageNum":1,"numPerPage":10,"totalCount":0,"searchType":"3"}}}
+WARNI 2022-05-13 16:12:38,848 connection.py _on_message     241 received async msg: 306094e5-cfab-42c1-9db1-e3dcd52ed68f
+ERROR 2022-05-13 16:12:38,854 assertbase.py _teardown_collect 267 <bound method AppTest.get_all_pages_path of <testcase.mini.AppTest testMethod=get_all_pages_path>>
+Traceback (most recent call last):
+  File "C:\Python310\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 86, in run
+    self._callTestMethod(testMethod)
+  File "C:\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "D:\PycharmProjects\UIautomate\module\cfs\miniprogram\testcase\mini.py", line 16, in get_all_pages_path
+    self.page.get_element("rich-text[text(contains(\"测试患教资料\"))]").click()
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 135, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 214, in get_element
+    raise MiniElementNotFoundError("element[%s] not found" % selector)
+minium.framework.exception.MiniElementNotFoundError: element[rich-text[text(contains("测试患教资料"))]] not found

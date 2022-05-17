@@ -1,0 +1,13 @@
+ERROR 2022-04-21 15:32:44,229 assertbase.py _teardown_collect 267 <bound method AppTest.test_get_all_pages_path of <module.cfs.app.run.AppTest testMethod=test_get_all_pages_path>>
+Traceback (most recent call last):
+  File "C:\Python310\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 86, in run
+    self._callTestMethod(testMethod)
+  File "C:\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "D:\PycharmProjects\UIautomate\module\cfs\app\run.py", line 10, in test_get_all_pages_path
+    print(self.driver.page_source)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\framework\assertbase.py", line 323, in __getattribute__
+    attr = super().__getattribute__(item)
+AttributeError: 'AppTest' object has no attribute 'driver'

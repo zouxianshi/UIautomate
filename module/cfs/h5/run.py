@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*- 
 # @Time : 2022/3/21 16:55 
 # @Author : crow
-# @File : run.py
+# @File : mini.py
 
 import unittest
 
 from config import log
-from config.driver_generator import quit_driver
+from common.driver_generator import quit_driver
 
 loader = unittest.TestLoader()
 suite = unittest.TestSuite()

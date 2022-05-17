@@ -1,0 +1,52 @@
+DEBUG 2022-05-13 16:12:51,031 minitest.py _miniSetUp      286 =========Current case：get_all_pages_path=========
+INFO  2022-05-13 16:12:51,032 app.py     relaunch        306 ReLaunch: /pages/home/home/index
+DEBUG 2022-05-13 16:12:51,032 connection.py send            183 SEND > {"id":"103baf54-aeb7-4a88-8943-2ed05dd2dd00","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-05-13 16:12:51,047 connection.py _on_message     232 RECV < {"id":"103baf54-aeb7-4a88-8943-2ed05dd2dd00","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-05-13 16:12:51,706 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":8,"path":"pages/home/home/index","query":{},"openType":"reLaunch","__ts__":1652429571683},1652429571683]}}
+INFO  2022-05-13 16:12:51,706 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 8, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1652429571683}, 1652429571683]}
+INFO  2022-05-13 16:12:51,708 minitest.py capture         548 capture setup.png
+DEBUG 2022-05-13 16:12:51,708 connection.py send            183 SEND > {"id":"747d7e78-54c3-41f5-8ffe-6b4a0ff4187b","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-05-13 16:12:53,717 connection.py _on_message     230 RECV < {"id":"747d7e78-54c3-41f5-8ffe-6b4a0ff4187b","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAA6oAAAZFCAIAAACvNLm5AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvemzJcd1H3hOZq13X97eOxpLN9AgARAEuEhcJUsamVpCY8kfZsIjTYw/TMyH+Qcm/HUiZiLms2PsccSELZOU5ZFla7FIkCAIgiSIHWig9+3t691rzzzzoZZb9/XrxnuN1/3u686Dxnl5s7J+lXUqK+tXp05m4ude+XcAAACISET7m1bIClkhK2SFrJAVskJWyAp5rJD59D/7IwAABMiK7WNaIStkhayQFbJCVsgKWSEr5HFCZgCAiECAiPclrZAVskJWyApZIStkhayQFfLYIDNEJCKllVZaaaWVVlpppZV+FDQ78BoorbTSSiuttNJKK630A9P4+R/9OQFhEhwB+5tWyApZIStkhayQFbJCVsgKeayQGR...
+INFO  2022-05-13 16:12:53,720 app.py     redirect_to     288 RedirectTo: /pages/home/home/index
+DEBUG 2022-05-13 16:12:53,721 connection.py send            183 SEND > {"id":"92dea91f-cb09-49f5-98fd-93a950d9fa8c","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-05-13 16:12:53,750 connection.py _on_message     232 RECV < {"id":"92dea91f-cb09-49f5-98fd-93a950d9fa8c","result":{"result":{"errMsg":"redirectTo:ok"}}}
+DEBUG 2022-05-13 16:12:53,878 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":9,"path":"pages/home/home/index","query":{},"openType":"redirectTo","__ts__":1652429573844},1652429573845]}}
+INFO  2022-05-13 16:12:53,879 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 9, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'redirectTo', '__ts__': 1652429573844}, 1652429573845]}
+DEBUG 2022-05-13 16:12:53,879 connection.py send            183 SEND > {"id":"266cfae7-fd44-43ab-a747-58481d4735bf","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-05-13 16:12:53,932 connection.py _on_message     232 RECV < {"id":"266cfae7-fd44-43ab-a747-58481d4735bf","result":{"pageId":9,"path":"pages/home/home/index","query":{}}}
+INFO  2022-05-13 16:12:53,933 page.py    _get_elements_by_css 445 try to get elements: view.search-box[text(contains("查询科普"))]
+DEBUG 2022-05-13 16:12:53,933 connection.py send            183 SEND > {"id":"be3a3866-ab12-43ec-86eb-86ba266ee46f","method":"Page.getElements","params":{"selector":"view.search-box[text(contains(\"\u67e5\u8be2\u79d1\u666e\"))]","pageId":9}}
+DEBUG 2022-05-13 16:12:53,943 connection.py _on_message     232 RECV < {"id":"be3a3866-ab12-43ec-86eb-86ba266ee46f","result":{"elements":[{"elementId":"42e2fefa-25e2-4a16-a50a-d1769345ca48","tagName":"view"}]}}
+INFO  2022-05-13 16:12:54,952 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x0000015C3F816710>]
+DEBUG 2022-05-13 16:12:54,952 connection.py send            183 SEND > {"id":"50c4afa2-609e-4b10-b724-acf41d27e7a0","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"42e2fefa-25e2-4a16-a50a-d1769345ca48","pageId":9}}
+DEBUG 2022-05-13 16:12:54,956 connection.py _on_message     232 RECV < {"id":"50c4afa2-609e-4b10-b724-acf41d27e7a0","result":{"styles":["auto"]}}
+DEBUG 2022-05-13 16:12:54,957 connection.py send            183 SEND > {"id":"4cfb4377-b837-4cb3-809b-2f6e86755986","method":"Element.tap","params":{"elementId":"42e2fefa-25e2-4a16-a50a-d1769345ca48","pageId":9}}
+DEBUG 2022-05-13 16:12:55,012 connection.py _on_message     232 RECV < {"id":"4cfb4377-b837-4cb3-809b-2f6e86755986","result":{}}
+DEBUG 2022-05-13 16:12:55,347 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":10,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"},"openType":"navigateTo","__ts__":1652429575315},1652429575315]}}
+INFO  2022-05-13 16:12:55,348 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 10, 'path': 'package1/pages/classroom/search/index', 'query': {'searchType': '3'}, 'openType': 'navigateTo', '__ts__': 1652429575315}, 1652429575315]}
+DEBUG 2022-05-13 16:12:56,026 connection.py send            183 SEND > {"id":"68b3cf75-af20-4e68-ba07-93b71f975499","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-05-13 16:12:56,029 connection.py _on_message     232 RECV < {"id":"68b3cf75-af20-4e68-ba07-93b71f975499","result":{"pageId":10,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+INFO  2022-05-13 16:12:56,030 page.py    _get_elements_by_css 445 try to get elements: input.search-box[text(contains("搜索疾病/问题"))]
+DEBUG 2022-05-13 16:12:56,030 connection.py send            183 SEND > {"id":"4a604872-dad2-4bd5-9eec-84b139ea798b","method":"Page.getElements","params":{"selector":"input.search-box[text(contains(\"\u641c\u7d22\u75be\u75c5/\u95ee\u9898\"))]","pageId":10}}
+DEBUG 2022-05-13 16:12:56,033 connection.py _on_message     232 RECV < {"id":"4a604872-dad2-4bd5-9eec-84b139ea798b","result":{"elements":[{"elementId":"4e1f6cd4-d3ed-44fe-96e7-af307ef4dd2d","tagName":"input"}]}}
+INFO  2022-05-13 16:12:57,040 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x0000015C3F817130>]
+DEBUG 2022-05-13 16:12:57,041 connection.py send            183 SEND > {"id":"8bf07734-c065-47a8-8077-b3a8d8dd35d9","method":"Element.callFunction","params":{"functionName":"input.input","args":["\u5fc3\u8840\u7ba1"],"elementId":"4e1f6cd4-d3ed-44fe-96e7-af307ef4dd2d","pageId":10}}
+DEBUG 2022-05-13 16:12:57,051 connection.py _on_message     232 RECV < {"id":"8bf07734-c065-47a8-8077-b3a8d8dd35d9","result":{}}
+DEBUG 2022-05-13 16:12:57,052 connection.py send            183 SEND > {"id":"60eea124-3b85-48c3-8446-a11a80193f12","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-05-13 16:12:57,055 connection.py _on_message     232 RECV < {"id":"60eea124-3b85-48c3-8446-a11a80193f12","result":{"pageId":10,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+INFO  2022-05-13 16:12:57,055 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:12:57,056 connection.py send            183 SEND > {"id":"ac32ef28-98b9-4705-9654-b3f0a19eafa5","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":10}}
+DEBUG 2022-05-13 16:12:57,058 connection.py _on_message     232 RECV < {"id":"ac32ef28-98b9-4705-9654-b3f0a19eafa5","result":{"elements":[]}}
+WARNI 2022-05-13 16:12:58,070 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-05-13 16:12:58,334 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:12:58,334 connection.py send            183 SEND > {"id":"0d73d261-391f-4604-8e3f-97d7cbf2b8d6","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":10}}
+DEBUG 2022-05-13 16:12:58,337 connection.py _on_message     232 RECV < {"id":"0d73d261-391f-4604-8e3f-97d7cbf2b8d6","result":{"elements":[]}}
+WARNI 2022-05-13 16:12:59,346 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-05-13 16:12:59,613 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:12:59,613 connection.py send            183 SEND > {"id":"06b0c4ec-034e-4064-b516-025d2442c74a","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":10}}
+DEBUG 2022-05-13 16:12:59,616 connection.py _on_message     232 RECV < {"id":"06b0c4ec-034e-4064-b516-025d2442c74a","result":{"elements":[]}}
+WARNI 2022-05-13 16:13:00,626 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-05-13 16:13:00,890 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-05-13 16:13:00,890 connection.py send            183 SEND > {"id":"7eadfdf5-8c96-4286-9357-bed6fa9498f6","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":10}}
+ERROR 2022-05-13 16:13:00,900 connection.py _on_error       265 [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+INFO  2022-05-13 16:13:00,902 connection.py _ws_run_forever 151 websocket run forever shutdown

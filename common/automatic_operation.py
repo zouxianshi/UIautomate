@@ -6,6 +6,7 @@ import os
 import time
 from pathlib import Path
 
+import func_timeout
 from func_timeout import func_set_timeout
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
@@ -14,13 +15,13 @@ from selenium.webdriver.support import expected_conditions as EC
 from concurrent.futures import ThreadPoolExecutor
 import queue
 
-from common import constant
-from config import log, driver_generator
+from common import constant, driver_generator
+from config import log
 
 driver = driver_generator.get_driver()
 queue = queue.Queue(maxsize=10)
 pool = ThreadPoolExecutor(max_workers=10)
-TYPE = [By.ID, By.XPATH, By.NAME, By.CSS_SELECTOR]
+TYPE = [By.ID, By.XPATH, By.NAME, By.CSS_SELECTOR, By.TAG_NAME]
 loops = range(len(TYPE))
 flag = True
 
@@ -60,7 +61,7 @@ def get_element(flag, loops, queue) -> WebElement:
                         return result
                 except Exception:
                     pass
-    except Exception as e:
+    except func_timeout.exceptions.FunctionTimedOut as e:
         raise e
 
 

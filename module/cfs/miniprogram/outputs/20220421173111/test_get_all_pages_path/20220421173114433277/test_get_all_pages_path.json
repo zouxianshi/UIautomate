@@ -1,0 +1,172 @@
+{
+    "case_name": "test_get_all_pages_path",
+    "run_time": "20220421 17:31:14",
+    "test_type": "AppTest",
+    "case_doc": null,
+    "success": true,
+    "failures": "",
+    "errors": "",
+    "start_timestamp": 1650533474.4342773,
+    "is_failure": false,
+    "is_error": false,
+    "module": "D:.PycharmProjects.UIautomate.module.cfs.app.run",
+    "package": "module.cfs",
+    "failed_line_num": -1,
+    "device": {
+        "system_info": {
+            "model": "iPhone 12/13 Pro Max",
+            "pixelRatio": 3,
+            "windowWidth": 428,
+            "windowHeight": 753,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 428,
+            "screenHeight": 926,
+            "SDKVersion": "2.23.2",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 62,
+            "statusBarHeight": 47,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 44,
+                "left": 0,
+                "right": 428,
+                "bottom": 892,
+                "width": 428,
+                "height": 848
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 3,
+            "mode": "default"
+        }
+    },
+    "log_filename": "test_get_all_pages_path.log",
+    "error_type": "",
+    "error_value": "",
+    "error_stages": [],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/home/home/index",
+            "path": "images\\setup.png",
+            "ts": 1650533475,
+            "datetime": "2022-04-21 17:31:15"
+        },
+        {
+            "name": "teardown",
+            "url": "/package1/pages/classroom/detail/index",
+            "path": "images\\teardown.png",
+            "ts": 1650533566,
+            "datetime": "2022-04-21 17:32:46"
+        }
+    ],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "page_data": {
+        "id": "80",
+        "type": "text",
+        "showShare": false,
+        "detail": {
+            "authorDeptId": "72",
+            "authorDeptName": "\u5fc3\u8840\u7ba1\u5185\u79d1",
+            "changeFlag": 0,
+            "content": "<div>\u60a8\u597d\uff0c\u6700\u8fd1\u5929\u6c14\u8f6c\u51c9\uff0c\u8bf7\u6ce8\u610f\u4fdd\u6696\u3002\u9884\u9632\u611f\u5192\u4e0e\u6d41\u884c\u6027\u75be\u75c5\u3002</div>",
+            "coverUrl": "https://ustatic.med.gzhc365.com/fss/publicfile/39490df00173d32d4e5aa7f73c4bef0193d5b0bd75cf4b0f2ae6357784b9196f.jpg",
+            "createTime": "2021-03-18 09:45:26",
+            "deptId": "72",
+            "deptName": "\u5fc3\u8840\u7ba1\u5185\u79d1",
+            "deptVo": {
+                "createTime": "2021-03-17 17:29:28",
+                "deptName": "\u5fc3\u8840\u7ba1\u5185\u79d1",
+                "deptNo": "002",
+                "deptType": "outpatient",
+                "hasChild": 1,
+                "hisId": "45",
+                "id": "72",
+                "image": "https://fdfs-dev.oss-cn-shenzhen.aliyuncs.com/200001/k_xinxueguan.png",
+                "parentDeptNo": "-1",
+                "sortNo": 1,
+                "status": 1,
+                "updateTime": 1635153488000
+            },
+            "diseases": [
+                {
+                    "createTime": "2021-03-16 10:44:54",
+                    "diseaseName": "\u7cd6\u5c3f\u75c5",
+                    "id": "37",
+                    "researchDirection": "\u6d4b\u8bd5",
+                    "sortNo": 1,
+                    "standardDeptId": "2",
+                    "standardDeptName": "\u5168\u79d1\u533b\u7597\u79d1",
+                    "status": 1,
+                    "updateTime": 1635152787000
+                },
+                {
+                    "createTime": "2021-10-19 17:42:53",
+                    "diseaseName": "\u4e73\u817a\u826f\u6027\u75be\u75c5",
+                    "id": "41",
+                    "sortNo": 1,
+                    "standardDeptId": "49",
+                    "standardDeptName": "\u666e\u901a\u5916\u79d1\u4e13\u4e1a",
+                    "status": 1,
+                    "updateTime": 1635152686000
+                },
+                {
+                    "createTime": "2021-03-15 14:25:34",
+                    "diseaseName": "\u4e73\u817a\u764c",
+                    "id": "36",
+                    "sortNo": 1,
+                    "standardDeptId": "49",
+                    "standardDeptName": "\u666e\u901a\u5916\u79d1\u4e13\u4e1a",
+                    "status": 1,
+                    "updateTime": 1635152710000
+                }
+            ],
+            "hisId": "45",
+            "id": "80",
+            "introduction": "\u7528\u4e8e\u5e7f\u897f\u5168\u6d41\u7a0b\u6d4b\u8bd5",
+            "isLike": 0,
+            "isOpenService": 1,
+            "likeCount": 1,
+            "readCount": 45,
+            "shareCount": 2,
+            "source": 1,
+            "sourceMaterialId": "66",
+            "standardDeptId": "2",
+            "standardDeptName": "\u5168\u79d1\u533b\u7597\u79d1",
+            "status": 1,
+            "title": "\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599",
+            "type": "text",
+            "typeFlag": 1,
+            "updateTime": "2021-11-26 18:32:07"
+        }
+    },
+    "stop_timestamp": 1650533566.5631924,
+    "appId": "wx45cfec5a12afe345",
+    "appName": "\u76ca\u5fc3\u80fd\u62a4",
+    "source": {
+        "code": [
+            "    def test_get_all_pages_path(self):\n",
+            "        self.app.redirect_to(\"/pages/home/home/index\")\n",
+            "        self.page.get_element(idx.cxkp).click()\n",
+            "        self.page.get_element(idx.ssk).input(\"\u5fc3\u8840\u7ba1\")\n",
+            "        self.page.get_element(\"/view/view[2]/view/view[1]/navigator/view[1]/view[1]\").click()\n"
+        ],
+        "start": 8
+    },
+    "filename": "test_get_all_pages_path.json"
+}

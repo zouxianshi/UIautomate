@@ -1,0 +1,14 @@
+{
+  "debug_mode": "debug",
+  "project_path": "C:/Users/crow/Desktop/dist/dist",
+  "dev_tool_path": "D:/微信web开发者工具/cli.bat",
+
+  "#enable_app_log": false,
+  "#platform": "Android",
+  "#device_desire": {
+    "serial": "46HDU19126011337"
+  }
+}
+
+
+

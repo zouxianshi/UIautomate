@@ -1,0 +1,229 @@
+{
+    "case_name": "test_get_all_pages_path",
+    "run_time": "20220421 15:18:42",
+    "test_type": "AppTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"C:\\Python310\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n  File \"D:\\PycharmProjects\\UIautomate\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 86, in run\n    self._callTestMethod(testMethod)\n  File \"C:\\Python310\\lib\\unittest\\case.py\", line 549, in _callTestMethod\n    method()\n  File \"D:\\PycharmProjects\\UIautomate\\module\\cfs\\app\\run.py\", line 10, in test_get_all_pages_path\n    self.page.get_element(\"/view/view[2]/view/view[1]/navigator/view[1]/view[1]\").click()\n  File \"D:\\PycharmProjects\\UIautomate\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 135, in wrapper\n    result = func(*args, **kwargs)\n  File \"D:\\PycharmProjects\\UIautomate\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\page.py\", line 198, in get_element\n    return self.get_element_by_xpath(\n  File \"D:\\PycharmProjects\\UIautomate\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 135, in wrapper\n    result = func(*args, **kwargs)\n  File \"D:\\PycharmProjects\\UIautomate\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\page.py\", line 366, in get_element_by_xpath\n    raise MiniElementNotFoundError(\"element[%s] not found\" % xpath)\nminium.framework.exception.MiniElementNotFoundError: element[/view/view[2]/view/view[1]/navigator/view[1]/view[1]] not found\n",
+    "start_timestamp": 1650525522.509562,
+    "is_failure": false,
+    "is_error": true,
+    "module": "D:.PycharmProjects.UIautomate.module.cfs.app.run",
+    "package": "module.cfs",
+    "failed_line_num": 10,
+    "device": {
+        "system_info": {
+            "model": "iPhone 12/13 Pro Max",
+            "pixelRatio": 3,
+            "windowWidth": 428,
+            "windowHeight": 753,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 428,
+            "screenHeight": 926,
+            "SDKVersion": "2.23.2",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 77,
+            "statusBarHeight": 47,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 44,
+                "left": 0,
+                "right": 428,
+                "bottom": 892,
+                "width": 428,
+                "height": 848
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 3,
+            "mode": "default"
+        }
+    },
+    "log_filename": "test_get_all_pages_path.log",
+    "error_type": "MiniElementNotFoundError",
+    "error_value": "element[/view/view[2]/view/view[1]/navigator/view[1]/view[1]] not found",
+    "error_stages": [
+        "testMethod",
+        "tearDown"
+    ],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/home/home/index",
+            "path": "images\\setup.png",
+            "ts": 1650525524,
+            "datetime": "2022-04-21 15:18:44"
+        },
+        {
+            "name": "teardown",
+            "url": "/package1/pages/classroom/search/index",
+            "path": "images\\teardown.png",
+            "ts": 1650525531,
+            "datetime": "2022-04-21 15:18:51"
+        }
+    ],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "page_data": {
+        "TYPE_METHOD_MAP": {
+            "1": {
+                "placeholder": "\u641c\u7d22\u75be\u75c5",
+                "listName": "diseaseName",
+                "listType": "diseaseList"
+            },
+            "2": {
+                "placeholder": "\u641c\u7d22\u79d1\u5ba4",
+                "listName": "deptName",
+                "listType": "deptList"
+            },
+            "3": {
+                "placeholder": "\u641c\u7d22\u75be\u75c5/\u95ee\u9898",
+                "listName": "title",
+                "listType": "classList"
+            }
+        },
+        "value": "\u5fc3\u8840\u7ba1",
+        "pageNum": 1,
+        "numPerPage": 10,
+        "totalCount": 3,
+        "searchType": "3",
+        "list": [
+            {
+                "authorDeptId": "72",
+                "authorDeptName": "\u5fc3\u8840\u7ba1\u5185\u79d1",
+                "coverUrl": "https://ustatic.med.gzhc365.com/fss/publicfile/39490df00173d32d4e5aa7f73c4bef0193d5b0bd75cf4b0f2ae6357784b9196f.jpg",
+                "deptId": "72",
+                "deptName": "\u5fc3\u8840\u7ba1\u5185\u79d1",
+                "diseases": [
+                    {
+                        "createTime": "2021-03-16 10:44:54",
+                        "diseaseName": "\u7cd6\u5c3f\u75c5",
+                        "id": "37",
+                        "researchDirection": "\u6d4b\u8bd5",
+                        "sortNo": 1,
+                        "standardDeptId": "2",
+                        "standardDeptName": "\u5168\u79d1\u533b\u7597\u79d1",
+                        "status": 1,
+                        "updateTime": 1635152787000
+                    },
+                    {
+                        "createTime": "2021-10-19 17:42:53",
+                        "diseaseName": "\u4e73\u817a\u826f\u6027\u75be\u75c5",
+                        "id": "41",
+                        "sortNo": 1,
+                        "standardDeptId": "49",
+                        "standardDeptName": "\u666e\u901a\u5916\u79d1\u4e13\u4e1a",
+                        "status": 1,
+                        "updateTime": 1635152686000
+                    },
+                    {
+                        "createTime": "2021-03-15 14:25:34",
+                        "diseaseName": "\u4e73\u817a\u764c",
+                        "id": "36",
+                        "sortNo": 1,
+                        "standardDeptId": "49",
+                        "standardDeptName": "\u666e\u901a\u5916\u79d1\u4e13\u4e1a",
+                        "status": 1,
+                        "updateTime": 1635152710000
+                    }
+                ],
+                "hisId": "45",
+                "hisName": "\u5e7f\u897f\u58ee\u65cf\u81ea\u6cbb\u533a\u4eba\u6c11\u533b\u9662",
+                "id": "80",
+                "introduction": "\u7528\u4e8e\u5e7f\u897f\u5168\u6d41\u7a0b\u6d4b\u8bd5",
+                "likeCount": 1,
+                "readCount": 39,
+                "shareCount": 2,
+                "title": "\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599",
+                "type": "text"
+            },
+            {
+                "authorDeptId": "72",
+                "authorDeptName": "\u5fc3\u8840\u7ba1\u5185\u79d1",
+                "coverUrl": "https://ustatic.med.gzhc365.com/fss/publicfile/2ab46b6fbf36667a4841f254f333837dea254fe302118484c0627f8697c60440.jpg",
+                "deptId": "72",
+                "deptName": "\u5fc3\u8840\u7ba1\u5185\u79d1",
+                "diseases": [
+                    {
+                        "createTime": "2021-03-16 10:44:54",
+                        "diseaseName": "\u7cd6\u5c3f\u75c5",
+                        "id": "37",
+                        "researchDirection": "\u6d4b\u8bd5",
+                        "sortNo": 1,
+                        "standardDeptId": "2",
+                        "standardDeptName": "\u5168\u79d1\u533b\u7597\u79d1",
+                        "status": 1,
+                        "updateTime": 1635152787000
+                    }
+                ],
+                "hisId": "45",
+                "hisName": "\u5e7f\u897f\u58ee\u65cf\u81ea\u6cbb\u533a\u4eba\u6c11\u533b\u9662",
+                "id": "78",
+                "introduction": "\u8be6\u60c5\uff1a\u65e0~~",
+                "likeCount": 0,
+                "readCount": 6,
+                "shareCount": 0,
+                "title": "\u89c6\u9891\u6d4b\u8bd5",
+                "type": "video"
+            },
+            {
+                "coverUrl": "",
+                "deptId": "72",
+                "deptName": "\u5fc3\u8840\u7ba1\u5185\u79d1",
+                "diseases": [
+                    {
+                        "createTime": "2021-10-19 17:42:53",
+                        "diseaseName": "\u4e73\u817a\u826f\u6027\u75be\u75c5",
+                        "id": "41",
+                        "sortNo": 1,
+                        "standardDeptId": "49",
+                        "standardDeptName": "\u666e\u901a\u5916\u79d1\u4e13\u4e1a",
+                        "status": 1,
+                        "updateTime": 1635152686000
+                    }
+                ],
+                "doctorId": "216",
+                "doctorImg": "https://ustatic.med.gzhc365.com/fss/publicfile/435bb0aab88d1c5d70fb2ea3648aeefbf531ae4fb726db28634dd62e47338728.jpg",
+                "doctorName": "\u9ec4\u680b",
+                "hisId": "45",
+                "hisName": "\u5e7f\u897f\u58ee\u65cf\u81ea\u6cbb\u533a\u4eba\u6c11\u533b\u9662",
+                "id": "121",
+                "introduction": "dddd",
+                "likeCount": 0,
+                "readCount": 4,
+                "shareCount": 0,
+                "title": "ddd",
+                "type": "text"
+            }
+        ]
+    },
+    "stop_timestamp": 1650525531.3795207,
+    "appId": "wx45cfec5a12afe345",
+    "appName": "\u76ca\u5fc3\u80fd\u62a4",
+    "source": {
+        "code": [
+            "    def test_get_all_pages_path(self):\n",
+            "        self.app.redirect_to(\"/pages/home/home/index\")\n",
+            "        self.page.get_element(idx.cxkp).click()\n",
+            "        self.page.get_element(idx.ssk).input(\"\u5fc3\u8840\u7ba1\")\n",
+            "        self.page.get_element(\"/view/view[2]/view/view[1]/navigator/view[1]/view[1]\").click()\n"
+        ],
+        "start": 6
+    },
+    "filename": "test_get_all_pages_path.json"
+}

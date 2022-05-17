@@ -1,0 +1,30 @@
+DEBUG 2022-05-13 15:47:04,720 minitest.py _miniSetUp      286 =========Current case：get_all_pages_path=========
+INFO  2022-05-13 15:47:04,720 app.py     relaunch        306 ReLaunch: /pages/home/home/index
+DEBUG 2022-05-13 15:47:04,721 connection.py send            183 SEND > {"id":"d28eed8a-ed5e-491f-b0c7-c9c6c3978b07","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-05-13 15:47:04,737 connection.py _on_message     232 RECV < {"id":"d28eed8a-ed5e-491f-b0c7-c9c6c3978b07","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-05-13 15:47:04,892 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":4,"path":"pages/home/home/index","query":{},"openType":"reLaunch","__ts__":1652428024860},1652428024861]}}
+INFO  2022-05-13 15:47:04,893 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 4, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1652428024860}, 1652428024861]}
+INFO  2022-05-13 15:47:04,895 minitest.py capture         548 capture setup.png
+DEBUG 2022-05-13 15:47:04,897 connection.py send            183 SEND > {"id":"4a6c61ef-fa71-43ee-a492-e9ee4e6a1115","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-05-13 15:47:05,109 connection.py _on_message     230 RECV < {"id":"4a6c61ef-fa71-43ee-a492-e9ee4e6a1115","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAA6oAAAZFCAIAAACvNLm5AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvVmTJUd2JnaOe6x3vzfXytqrAFQVUOgG0GgA3U32ylWc5mK0IedBsjFSpnmQ6UF/QDavMpPM9DwmSmMmm+F0N4cjDmeapNgbGo0G2GhsjbXWrCUrs3K/e6zufvQQy703K6uQWahC3szyg8LJ73q4n/Dw8PD44sQJd/zcj/49AAAAIhKRxhprrLHGGmusscYaH2DMZ/7lHwMAIEC6SWONNdZYY4011lhjjQ8sZgCAiECAiBprrLHGGmusscYaa3ywMUNEItJaa6211lprrbXWWutHQbM9r4HWWmuttdZaa6211lp/Zho//+O/JCAEBAAA0FhjjTXWWGONNdZY4wOMGREhIBEBgMYaa6yxxhprrLHGGh9sjJ...
+DEBUG 2022-05-13 15:47:05,111 minitest.py _miniTearDown   512 =========Current case Down：get_all_pages_path=========
+INFO  2022-05-13 15:47:05,113 minitest.py capture         548 capture teardown.png
+DEBUG 2022-05-13 15:47:05,113 connection.py send            183 SEND > {"id":"cc746ea3-01d9-4352-a072-0fb36eb68eed","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-05-13 15:47:05,458 connection.py _on_message     230 RECV < {"id":"cc746ea3-01d9-4352-a072-0fb36eb68eed","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAA6oAAAZFCAIAAACvNLm5AAAAAXNSR0IArs4c6QAAIABJREFUeJzsvVmTHUl2JnaOe6x3X3JDYgeqCkAVqruqurt6I3slh6Q4zcV6hpwHybjINA8yPegPyOZVZpKZnsdE05jJNBS7RzOa4UyTFNlrdXUVu7qW7lqxJpZEJnK9+43d/eghlhs3M5HIRAGVNwE/gJ38rof7CQ8PD48vTpxwx0/94N8CAAAgIhEprLDCCiussMIKK6zwY4z57J98GwAAAZJNCiussMIKK6ywwgor/NhiBgCICASIqLDCCiussMIKK6ywwo83ZohIREorrbTSSiuttNJKK/0kaHbgNVBaaaWVVlpppZVWWulPTOOnf/iXBISAAAAACiussMIKK6ywwgor/BhjRkQISEQAoLDCCiussMIKK6ywwo83xk...
+DEBUG 2022-05-13 15:47:05,461 connection.py send            183 SEND > {"id":"4266f533-0b62-40e6-9879-4352b5d9d75d","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-05-13 15:47:05,463 connection.py _on_message     232 RECV < {"id":"4266f533-0b62-40e6-9879-4352b5d9d75d","result":{"pageId":4,"path":"pages/home/home/index","query":{}}}
+DEBUG 2022-05-13 15:47:05,464 connection.py send            183 SEND > {"id":"3af712a1-76c4-4897-a4b3-4fe73949f617","method":"Page.getData","params":{"pageId":4}}
+DEBUG 2022-05-13 15:47:05,467 connection.py _on_message     230 RECV < {"id":"3af712a1-76c4-4897-a4b3-4fe73949f617","result":{"data":{"isFirstEnter":0,"showStartPage":"1","hisId":45,"hisDet":{"appointmentCodeUrl":"https://ustatic.med.gzhc365.com/fss/publicfile/70f794fc23c8b4e348e638cd262175aa0993a503068289b2ed2448231fa84e7b.png","appointmentUrl":"","area":"青秀区","attribute":"医联体主体单位","city":"南宁市","contactName":"测试","coordinateType":"BD09","createTime":"2020-11-14 21:22:22","customerServiceSupport":1,"detailedAddress":"桃源路6号","email":"386030556@qq.com","hisId":"45","hisLevel"...
+ERROR 2022-05-13 15:47:05,471 assertbase.py _teardown_collect 267 <bound method AppTest.get_all_pages_path of <testcase.mini.AppTest testMethod=get_all_pages_path>>
+Traceback (most recent call last):
+  File "C:\Python310\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 86, in run
+    self._callTestMethod(testMethod)
+  File "C:\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "D:\PycharmProjects\UIautomate\module\cfs\miniprogram\testcase\mini.py", line 12, in get_all_pages_path
+    self.miniprogram.redirect_to("/pages/home/home/index")
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\framework\assertbase.py", line 323, in __getattribute__
+    attr = super().__getattribute__(item)
+AttributeError: 'AppTest' object has no attribute 'miniprogram'

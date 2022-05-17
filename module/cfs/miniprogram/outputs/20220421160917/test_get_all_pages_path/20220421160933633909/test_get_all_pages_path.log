@@ -1,0 +1,15 @@
+ERROR 2022-04-21 16:09:39,373 assertbase.py _teardown_collect 267 <bound method AppTest.test_get_all_pages_path of <module.cfs.app.run.AppTest testMethod=test_get_all_pages_path>>
+Traceback (most recent call last):
+  File "C:\Python310\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 86, in run
+    self._callTestMethod(testMethod)
+  File "C:\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "D:\PycharmProjects\UIautomate\module\cfs\app\run.py", line 9, in test_get_all_pages_path
+    self.page.get_element(idx.ssk).input("心血管")
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 135, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\PycharmProjects\UIautomate\venv\lib\site-packages\minium\miniprogram\base_driver\page.py", line 214, in get_element
+    raise MiniElementNotFoundError("element[%s] not found" % selector)
+minium.framework.exception.MiniElementNotFoundError: element[input.search-box[text(contains("搜索疾病/问题"))]] not found

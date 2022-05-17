@@ -1,0 +1,220 @@
+INFO  2022-04-24 11:49:07,739 wx_minium.py launch_dev_tool 701 Starting dev tool and launch MiniProgram project ...
+INFO  2022-04-24 11:49:07,739 minium_object.py _do_shell       35  de shell: cli.bat auto --project "C:/Users/crow/Desktop/dist/dist" --auto-port 9420
+INFO  2022-04-24 11:49:08,528 minium_object.py _do_shell       53  err:
+- initialize
+
+√ IDE server has started, listening on http://127.0.0.1:17694
+- preparing
+- Fetching AppID (wx45cfec5a12afe345) permissions
+√ Using AppID: wx45cfec5a12afe345
+× Fetching AppID (wx45cfec5a12afe345) detailed information
+
+INFO  2022-04-24 11:49:08,529 minium_object.py _do_shell       54  out:
+[error] {
+  code: 10,
+  message: 'Error: 错误 Error: Port 9420 is in use (code 10)Error: Port 9420 is in use\n' +
+    '    at Object.exports.auto [as method] (D:\\微信web开发者工具\\code\\package.nw\\core.wxvpkg\\1d3c44fb45826718b091c4f56f6d9ab0.js:2:953)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:93:5)\n' +
+    '    at async D:\\微信web开发者工具\\code\\package.nw\\core.wxvpkg\\7a975443f52e91830ae1d65cdf8c86db.js:2:3730\n' +
+    '    at async Object.<anonymous> (D:\\微信web开发者工具\\code\\package.nw\\core.wxvpkg\\7a975443f52e91830ae1d65cdf8c86db.js:2:2983)'
+}
+
+INFO  2022-04-24 11:49:08,529 wx_minium.py connect_dev_tool 794 Trying to connect Dev tool ...
+INFO  2022-04-24 11:49:09,038 connection.py _connect        137 connect to WebChatTools successfully
+DEBUG 2022-04-24 11:49:09,038 connection.py send            183 SEND > {"id":"6ec41066-de96-4386-8365-426d5a2ec812","method":"App.callWxMethod","params":{"method":"getSystemInfoSync","args":[]}}
+DEBUG 2022-04-24 11:49:09,044 connection.py _on_message     230 RECV < {"id":"6ec41066-de96-4386-8365-426d5a2ec812","result":{"result":{"model":"iPhone 12/13 Pro Max","pixelRatio":3,"windowWidth":428,"windowHeight":753,"system":"iOS 10.0.1","language":"zh_CN","version":"8.0.5","deviceOrientation":"portrait","screenWidth":428,"screenHeight":926,"SDKVersion":"2.23.2","brand":"devtools","fontSizeSetting":16,"benchmarkLevel":1,"batteryLevel":100,"statusBarHeight":47,"bluetoothEnabled":true,"locationEnabled":true,"wifiEnabled":true,"cameraAuthorized":true,"locationAuthorized":tr...
+DEBUG 2022-04-24 11:49:09,045 connection.py send            183 SEND > {"id":"d72ccec1-a3eb-4027-bd6c-dc5ee2127950","method":"App.addBinding","params":{"name":"onAppRouteDone"}}
+DEBUG 2022-04-24 11:49:09,046 connection.py _on_message     232 RECV < {"id":"d72ccec1-a3eb-4027-bd6c-dc5ee2127950","result":{}}
+DEBUG 2022-04-24 11:49:09,047 connection.py send            183 SEND > {"id":"fc6fa227-3d6f-4c8b-a725-88390b14b487","method":"App.callFunction","params":{"functionDeclaration":"function () {\n    if (!global.__minium_onAppRouteDone) {\n        wx.onAppRouteDone(function (options) {\n            onAppRouteDone(options, Date.now())\n        })\n        global.__minium_onAppRouteDone = true\n    }\n}","args":[]}}
+DEBUG 2022-04-24 11:49:09,048 connection.py _on_message     232 RECV < {"id":"fc6fa227-3d6f-4c8b-a725-88390b14b487","result":{}}
+DEBUG 2022-04-24 11:49:09,048 connection.py send            183 SEND > {"id":"975e8771-fe64-4d82-8e5c-cbb633d50860","method":"App.callFunction","params":{"functionDeclaration":"function () {\n                    if(!global.minium) {global.minium = {};return false;} \n                    else {return true;}\n                }","args":[]}}
+DEBUG 2022-04-24 11:49:09,049 connection.py _on_message     232 RECV < {"id":"975e8771-fe64-4d82-8e5c-cbb633d50860","result":{"result":true}}
+DEBUG 2022-04-24 11:49:09,050 connection.py send            183 SEND > {"id":"680edb60-ce80-4471-8950-542420899091","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}
+DEBUG 2022-04-24 11:49:09,051 connection.py _on_message     232 RECV < {"id":"680edb60-ce80-4471-8950-542420899091","result":{"result":{"path":"pages/home/home/index","query":{},"scene":1001,"referrerInfo":{},"mode":"default","apiCategory":"default"}}}
+INFO  2022-04-24 11:49:09,051 app.py     relaunch        306 ReLaunch: /pages/home/home/index
+DEBUG 2022-04-24 11:49:09,051 connection.py send            183 SEND > {"id":"8c545940-63c0-44b1-804e-ba75e3c4c222","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:49:09,053 connection.py _on_message     232 RECV < {"id":"8c545940-63c0-44b1-804e-ba75e3c4c222","result":{"pageId":6,"path":"pages/home/home/index","query":{}}}
+DEBUG 2022-04-24 11:49:09,053 connection.py send            183 SEND > {"id":"67397912-b0d5-418f-9687-a7c8b336efa4","method":"App.callWxMethod","params":{"method":"getAccountInfoSync","args":[]}}
+DEBUG 2022-04-24 11:49:09,055 connection.py _on_message     232 RECV < {"id":"67397912-b0d5-418f-9687-a7c8b336efa4","result":{"result":{"miniProgram":{"appId":"wx45cfec5a12afe345","envVersion":"develop","version":""}}}}
+DEBUG 2022-04-24 11:49:09,055 connection.py send            183 SEND > {"id":"0ed740bb-b3f9-46f2-9810-d4875934fe44","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-04-24 11:49:09,082 connection.py _on_message     232 RECV < {"id":"0ed740bb-b3f9-46f2-9810-d4875934fe44","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-04-24 11:49:09,216 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":7,"path":"pages/home/home/index","query":{},"openType":"reLaunch","__ts__":1650772149187},1650772149187]}}
+INFO  2022-04-24 11:49:09,217 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 7, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1650772149187}, 1650772149187]}
+DEBUG 2022-04-24 11:49:09,218 connection.py send            183 SEND > {"id":"64328a29-c597-48c9-ade0-a4406606d8eb","method":"App.callWxMethod","params":{"method":"getSystemInfoSync","args":[]}}
+DEBUG 2022-04-24 11:49:09,224 connection.py _on_message     230 RECV < {"id":"64328a29-c597-48c9-ade0-a4406606d8eb","result":{"result":{"model":"iPhone 12/13 Pro Max","pixelRatio":3,"windowWidth":428,"windowHeight":753,"system":"iOS 10.0.1","language":"zh_CN","version":"8.0.5","deviceOrientation":"portrait","screenWidth":428,"screenHeight":926,"SDKVersion":"2.23.2","brand":"devtools","fontSizeSetting":16,"benchmarkLevel":1,"batteryLevel":100,"statusBarHeight":47,"bluetoothEnabled":true,"locationEnabled":true,"wifiEnabled":true,"cameraAuthorized":true,"locationAuthorized":tr...
+DEBUG 2022-04-24 11:49:09,225 connection.py send            183 SEND > {"id":"edac492f-793a-4a2a-8012-cb937364d6a5","method":"App.callFunction","params":{"functionDeclaration":"function () {return __wxConfig}","args":[]}}
+DEBUG 2022-04-24 11:49:09,239 connection.py _on_message     230 RECV < {"id":"edac492f-793a-4a2a-8012-cb937364d6a5","result":{"result":{"pages":["pages/home/home/index","pages/home/startpage/index","pages/message/home/index","pages/message/chat/index","pages/task/home/index","pages/mine/home/index","pages/mine/patient/list/index","pages/mine/patient/add/index","pages/mine/patient/bindcard/index","pages/mine/patient/detail/index","pages/auth/user_info/index","package1/pages/signservice/list/index","package1/pages/signservice/detail/index","package1/pages/signservice/selectdo...
+DEBUG 2022-04-24 11:49:09,252 minitest.py _miniSetUp      286 =========Current case：test_get_all_pages_path=========
+INFO  2022-04-24 11:49:09,253 app.py     relaunch        306 ReLaunch: /pages/home/home/index
+DEBUG 2022-04-24 11:49:09,253 connection.py send            183 SEND > {"id":"f743eae9-945b-448d-a5a8-38c7aa708221","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-04-24 11:49:09,267 connection.py _on_message     232 RECV < {"id":"f743eae9-945b-448d-a5a8-38c7aa708221","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-04-24 11:49:09,876 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":8,"path":"pages/home/home/index","query":{},"openType":"reLaunch","__ts__":1650772149852},1650772149852]}}
+INFO  2022-04-24 11:49:09,877 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 8, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1650772149852}, 1650772149852]}
+INFO  2022-04-24 11:49:09,879 minitest.py capture         548 capture setup.png
+DEBUG 2022-04-24 11:49:09,880 connection.py send            183 SEND > {"id":"705f8a01-2bba-4a84-857b-006ca745def3","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-04-24 11:49:32,310 connection.py _on_message     230 RECV < {"id":"705f8a01-2bba-4a84-857b-006ca745def3","result":{"data":"iVBORw0KGgoAAAANSUhEUgAABC4AAAdbCAIAAAD2Sm0eAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvfmTXUd2JnZO5l3fWnthI0Bwa5JNstnsXS2pNTMeW7JiQjOhkCZifvCE5HCE/yqHHbY1WsIzMZZH8vR4utXqRWz1ziYJkNhRQAG1vv3dLfMc/5D33ndfVQEoFAtAVSG/AA9P5c38Mm/ezPvy3JMLvvNf/08AAABEZObD1S2zZbbMltkyW2bLbJkts2W2zJZ5T10u/9s/BAsLCwsLCwsLCwsLi6cLAQCIaKWVVlpppZVWWmmllVZa+TQlfuE7f8bMiMAMiPgEdMtsmS2zZbbMltkyW2bLbJkts2XeqQtmRsRK6KHrltkyW2bLbJkts2W2zJbZMltmy7xTL70iCAAAcLi6ZbbMltkyW2bLbJkts2W2zJbZMu...
+INFO  2022-04-24 11:49:32,319 app.py     redirect_to     288 RedirectTo: /pages/home/home/index
+DEBUG 2022-04-24 11:49:32,319 connection.py send            183 SEND > {"id":"a4dc5ee3-0b1d-4227-8c13-6f151a5ad957","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-04-24 11:49:32,344 connection.py _on_message     232 RECV < {"id":"a4dc5ee3-0b1d-4227-8c13-6f151a5ad957","result":{"result":{"errMsg":"redirectTo:ok"}}}
+DEBUG 2022-04-24 11:49:32,486 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":9,"path":"pages/home/home/index","query":{},"openType":"redirectTo","__ts__":1650772172452},1650772172452]}}
+INFO  2022-04-24 11:49:32,487 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 9, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'redirectTo', '__ts__': 1650772172452}, 1650772172452]}
+DEBUG 2022-04-24 11:49:32,487 connection.py send            183 SEND > {"id":"e350fd10-c655-40b4-8527-d4de9e986908","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:49:32,492 connection.py _on_message     232 RECV < {"id":"e350fd10-c655-40b4-8527-d4de9e986908","result":{"pageId":9,"path":"pages/home/home/index","query":{}}}
+INFO  2022-04-24 11:49:32,493 page.py    _get_elements_by_css 445 try to get elements: view.search-box[text(contains("查询科普"))]
+DEBUG 2022-04-24 11:49:32,494 connection.py send            183 SEND > {"id":"6471a612-074e-4ef9-b524-a197cdb501fa","method":"Page.getElements","params":{"selector":"view.search-box[text(contains(\"\u67e5\u8be2\u79d1\u666e\"))]","pageId":9}}
+DEBUG 2022-04-24 11:49:32,513 connection.py _on_message     232 RECV < {"id":"6471a612-074e-4ef9-b524-a197cdb501fa","result":{"elements":[{"elementId":"49cd1c9c-2995-4147-a15d-c7dac51f9f0c","tagName":"view"}]}}
+INFO  2022-04-24 11:49:33,518 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001B9A5F5EDA0>]
+DEBUG 2022-04-24 11:49:33,519 connection.py send            183 SEND > {"id":"70ca99e6-fa1e-4f46-9a98-b4715e52ec8d","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"49cd1c9c-2995-4147-a15d-c7dac51f9f0c","pageId":9}}
+DEBUG 2022-04-24 11:49:33,522 connection.py _on_message     232 RECV < {"id":"70ca99e6-fa1e-4f46-9a98-b4715e52ec8d","result":{"styles":["auto"]}}
+DEBUG 2022-04-24 11:49:33,523 connection.py send            183 SEND > {"id":"53b02156-7fd4-40c2-a981-0dfca02b189f","method":"Element.tap","params":{"elementId":"49cd1c9c-2995-4147-a15d-c7dac51f9f0c","pageId":9}}
+DEBUG 2022-04-24 11:49:33,560 connection.py _on_message     232 RECV < {"id":"53b02156-7fd4-40c2-a981-0dfca02b189f","result":{}}
+DEBUG 2022-04-24 11:49:34,457 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":10,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"},"openType":"navigateTo","__ts__":1650772174427},1650772174427]}}
+INFO  2022-04-24 11:49:34,457 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 10, 'path': 'package1/pages/classroom/search/index', 'query': {'searchType': '3'}, 'openType': 'navigateTo', '__ts__': 1650772174427}, 1650772174427]}
+DEBUG 2022-04-24 11:49:34,572 connection.py send            183 SEND > {"id":"8a8bf9d4-8f32-4962-8d31-0afe23067a9c","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:49:34,577 connection.py _on_message     232 RECV < {"id":"8a8bf9d4-8f32-4962-8d31-0afe23067a9c","result":{"pageId":10,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+INFO  2022-04-24 11:49:34,578 page.py    _get_elements_by_css 445 try to get elements: input.search-box[text(contains("搜索疾病/问题"))]
+DEBUG 2022-04-24 11:49:34,579 connection.py send            183 SEND > {"id":"8ed30c73-5240-451c-ba26-e493d9bcf463","method":"Page.getElements","params":{"selector":"input.search-box[text(contains(\"\u641c\u7d22\u75be\u75c5/\u95ee\u9898\"))]","pageId":10}}
+DEBUG 2022-04-24 11:49:34,610 connection.py _on_message     232 RECV < {"id":"8ed30c73-5240-451c-ba26-e493d9bcf463","result":{"elements":[{"elementId":"1e9e69b7-e5b1-4859-a5d1-99f062d1e19f","tagName":"input"}]}}
+INFO  2022-04-24 11:49:35,619 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x000001B9A5F5EC50>]
+DEBUG 2022-04-24 11:49:35,619 connection.py send            183 SEND > {"id":"1b75a5f0-7706-456c-ba99-81ebb503401c","method":"Element.callFunction","params":{"functionName":"input.input","args":["\u5fc3\u8840\u7ba1"],"elementId":"1e9e69b7-e5b1-4859-a5d1-99f062d1e19f","pageId":10}}
+DEBUG 2022-04-24 11:49:35,633 connection.py _on_message     232 RECV < {"id":"1b75a5f0-7706-456c-ba99-81ebb503401c","result":{}}
+DEBUG 2022-04-24 11:49:35,634 connection.py send            183 SEND > {"id":"a027c2a8-cdf1-41f6-9779-d1a51bf9ff15","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:49:35,636 connection.py _on_message     232 RECV < {"id":"a027c2a8-cdf1-41f6-9779-d1a51bf9ff15","result":{"pageId":10,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+INFO  2022-04-24 11:49:35,637 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-04-24 11:49:35,637 connection.py send            183 SEND > {"id":"786455ea-4dae-4c4b-8ea0-e13853fbe302","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":10}}
+DEBUG 2022-04-24 11:49:35,639 connection.py _on_message     232 RECV < {"id":"786455ea-4dae-4c4b-8ea0-e13853fbe302","result":{"elements":[]}}
+WARNI 2022-04-24 11:49:36,658 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-04-24 11:49:36,918 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-04-24 11:49:36,919 connection.py send            183 SEND > {"id":"38ca9b3a-cdbc-4b72-b36f-bbb3a2476460","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":10}}
+DEBUG 2022-04-24 11:49:36,922 connection.py _on_message     232 RECV < {"id":"38ca9b3a-cdbc-4b72-b36f-bbb3a2476460","result":{"elements":[{"elementId":"6479ac91-48fb-4ac3-856c-4869180d93db","tagName":"rich-text"},{"elementId":"5492d95a-5044-4e03-9540-64acc5471f63","tagName":"rich-text"},{"elementId":"a083e30a-2e71-4af2-9f9b-ce291ecf44c9","tagName":"rich-text"}]}}
+INFO  2022-04-24 11:49:37,924 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001B9A5F5FB50>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001B9A5F5F220>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001B9A5F5F490>]
+DEBUG 2022-04-24 11:49:37,925 connection.py send            183 SEND > {"id":"f18d50ea-2af7-4e7a-97a6-46ac87387dd1","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:49:37,928 connection.py _on_message     232 RECV < {"id":"f18d50ea-2af7-4e7a-97a6-46ac87387dd1","result":{"pageId":10,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+INFO  2022-04-24 11:49:37,929 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-04-24 11:49:37,929 connection.py send            183 SEND > {"id":"8196680e-3291-4da7-b5b7-5fca6aa44951","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":10}}
+DEBUG 2022-04-24 11:49:37,931 connection.py _on_message     232 RECV < {"id":"8196680e-3291-4da7-b5b7-5fca6aa44951","result":{"elements":[{"elementId":"6479ac91-48fb-4ac3-856c-4869180d93db","tagName":"rich-text"},{"elementId":"5492d95a-5044-4e03-9540-64acc5471f63","tagName":"rich-text"},{"elementId":"a083e30a-2e71-4af2-9f9b-ce291ecf44c9","tagName":"rich-text"}]}}
+INFO  2022-04-24 11:49:38,940 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001B9A5F5EFB0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001B9A5F5CAC0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x000001B9A5F5EE00>]
+DEBUG 2022-04-24 11:49:38,941 connection.py send            183 SEND > {"id":"62e37e1c-60fd-414c-92fd-42bd8ac472c5","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"6479ac91-48fb-4ac3-856c-4869180d93db","pageId":10}}
+DEBUG 2022-04-24 11:49:38,945 connection.py _on_message     232 RECV < {"id":"62e37e1c-60fd-414c-92fd-42bd8ac472c5","result":{"styles":["auto"]}}
+DEBUG 2022-04-24 11:49:38,945 connection.py send            183 SEND > {"id":"459cedfd-90b4-4c8b-a7bc-a2b93265790f","method":"Element.tap","params":{"elementId":"6479ac91-48fb-4ac3-856c-4869180d93db","pageId":10}}
+DEBUG 2022-04-24 11:49:39,004 connection.py _on_message     232 RECV < {"id":"459cedfd-90b4-4c8b-a7bc-a2b93265790f","result":{}}
+DEBUG 2022-04-24 11:49:39,355 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":11,"path":"package1/pages/classroom/detail/index","query":{"id":"80","type":"text"},"openType":"navigateTo","__ts__":1650772179326},1650772179326]}}
+INFO  2022-04-24 11:49:39,356 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 11, 'path': 'package1/pages/classroom/detail/index', 'query': {'id': '80', 'type': 'text'}, 'openType': 'navigateTo', '__ts__': 1650772179326}, 1650772179326]}
+DEBUG 2022-04-24 11:49:40,008 minitest.py _miniTearDown   512 =========Current case Down：test_get_all_pages_path=========
+INFO  2022-04-24 11:49:40,010 minitest.py capture         548 capture teardown.png
+DEBUG 2022-04-24 11:49:40,010 connection.py send            183 SEND > {"id":"3df3ea31-118a-4603-a91d-0c6c336ee1ce","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-04-24 11:49:40,619 connection.py _on_message     230 RECV < {"id":"3df3ea31-118a-4603-a91d-0c6c336ee1ce","result":{"data":"iVBORw0KGgoAAAANSUhEUgAABC4AAAgoCAIAAACNtGKYAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3WlYE1fbB/ATEowGGhBBWQUBC5alAhYrWgvUBVFErEu1FX0qRVpFaQWsgAKiVtz3rWoVtfpWWhdaatHHpVZUVKiKFkFQQBAlKkSIBBLyfhidZxogBAgk6v939QMzmcwMi73mn3Pu+7BkMhkBAAAAAADoWFrqvgEAAAAAAHgTIYoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAI...
+DEBUG 2022-04-24 11:49:40,619 connection.py send            183 SEND > {"id":"ec5a4588-9673-4482-b0db-f8dff720ff21","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:49:40,629 connection.py _on_message     232 RECV < {"id":"ec5a4588-9673-4482-b0db-f8dff720ff21","result":{"pageId":11,"path":"package1/pages/classroom/detail/index","query":{"id":"80","type":"text"}}}
+DEBUG 2022-04-24 11:49:40,630 connection.py send            183 SEND > {"id":"12894a40-177b-43e1-badd-18b7dd65873f","method":"Page.getData","params":{"pageId":11}}
+DEBUG 2022-04-24 11:49:40,631 connection.py _on_message     230 RECV < {"id":"12894a40-177b-43e1-badd-18b7dd65873f","result":{"data":{"id":"80","type":"text","showShare":false,"detail":{"authorDeptId":"72","authorDeptName":"心血管内科","changeFlag":0,"content":"<div>您好，最近天气转凉，请注意保暖。预防感冒与流行性疾病。</div>","coverUrl":"https://ustatic.med.gzhc365.com/fss/publicfile/39490df00173d32d4e5aa7f73c4bef0193d5b0bd75cf4b0f2ae6357784b9196f.jpg","createTime":"2021-03-18 09:45:26","deptId":"72","deptName":"心血管内科","deptVo":{"createTime":"2021-03-17 17:29:28","deptName":"心血管内科","deptNo":"002","deptTy...
+INFO  2022-04-24 11:55:09,719 wx_minium.py launch_dev_tool 701 Starting dev tool and launch MiniProgram project ...
+INFO  2022-04-24 11:55:09,720 minium_object.py _do_shell       35  de shell: cli.bat auto --project "C:/Users/crow/Desktop/dist/dist" --auto-port 9420
+INFO  2022-04-24 11:55:10,420 minium_object.py _do_shell       53  err:
+- initialize
+
+√ IDE server has started, listening on http://127.0.0.1:17694
+- preparing
+- Fetching AppID (wx45cfec5a12afe345) permissions
+√ Using AppID: wx45cfec5a12afe345
+× Fetching AppID (wx45cfec5a12afe345) detailed information
+
+INFO  2022-04-24 11:55:10,420 minium_object.py _do_shell       54  out:
+[error] {
+  code: 10,
+  message: 'Error: 错误 Error: Port 9420 is in use (code 10)Error: Port 9420 is in use\n' +
+    '    at Object.exports.auto [as method] (D:\\微信web开发者工具\\code\\package.nw\\core.wxvpkg\\1d3c44fb45826718b091c4f56f6d9ab0.js:2:953)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:93:5)\n' +
+    '    at async D:\\微信web开发者工具\\code\\package.nw\\core.wxvpkg\\7a975443f52e91830ae1d65cdf8c86db.js:2:3730\n' +
+    '    at async Object.<anonymous> (D:\\微信web开发者工具\\code\\package.nw\\core.wxvpkg\\7a975443f52e91830ae1d65cdf8c86db.js:2:2983)'
+}
+
+INFO  2022-04-24 11:55:10,428 wx_minium.py connect_dev_tool 794 Trying to connect Dev tool ...
+INFO  2022-04-24 11:55:11,438 connection.py _connect        137 connect to WebChatTools successfully
+DEBUG 2022-04-24 11:55:11,438 connection.py send            183 SEND > {"id":"532e0ee9-d8b8-4eb0-866a-f9262545e693","method":"App.callWxMethod","params":{"method":"getSystemInfoSync","args":[]}}
+DEBUG 2022-04-24 11:55:11,445 connection.py _on_message     230 RECV < {"id":"532e0ee9-d8b8-4eb0-866a-f9262545e693","result":{"result":{"model":"iPhone 12/13 Pro Max","pixelRatio":3,"windowWidth":428,"windowHeight":835,"system":"iOS 10.0.1","language":"zh_CN","version":"8.0.5","deviceOrientation":"portrait","screenWidth":428,"screenHeight":926,"SDKVersion":"2.23.2","brand":"devtools","fontSizeSetting":16,"benchmarkLevel":1,"batteryLevel":100,"statusBarHeight":47,"bluetoothEnabled":true,"locationEnabled":true,"wifiEnabled":true,"cameraAuthorized":true,"locationAuthorized":tr...
+DEBUG 2022-04-24 11:55:11,445 connection.py send            183 SEND > {"id":"f17c34de-a5cc-48ea-a065-b65088f7876a","method":"App.addBinding","params":{"name":"onAppRouteDone"}}
+DEBUG 2022-04-24 11:55:11,447 connection.py _on_message     232 RECV < {"id":"f17c34de-a5cc-48ea-a065-b65088f7876a","result":{}}
+DEBUG 2022-04-24 11:55:11,447 connection.py send            183 SEND > {"id":"d34b5dbb-38ce-4a66-8510-adae1653a8f5","method":"App.callFunction","params":{"functionDeclaration":"function () {\n    if (!global.__minium_onAppRouteDone) {\n        wx.onAppRouteDone(function (options) {\n            onAppRouteDone(options, Date.now())\n        })\n        global.__minium_onAppRouteDone = true\n    }\n}","args":[]}}
+DEBUG 2022-04-24 11:55:11,448 connection.py _on_message     232 RECV < {"id":"d34b5dbb-38ce-4a66-8510-adae1653a8f5","result":{}}
+DEBUG 2022-04-24 11:55:11,449 connection.py send            183 SEND > {"id":"ec94e635-e524-4c23-a47f-e177f1755a14","method":"App.callFunction","params":{"functionDeclaration":"function () {\n                    if(!global.minium) {global.minium = {};return false;} \n                    else {return true;}\n                }","args":[]}}
+DEBUG 2022-04-24 11:55:11,450 connection.py _on_message     232 RECV < {"id":"ec94e635-e524-4c23-a47f-e177f1755a14","result":{"result":true}}
+DEBUG 2022-04-24 11:55:11,450 connection.py send            183 SEND > {"id":"0607995c-5886-4b8d-bd03-a991403d0177","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}
+DEBUG 2022-04-24 11:55:11,452 connection.py _on_message     232 RECV < {"id":"0607995c-5886-4b8d-bd03-a991403d0177","result":{"result":{"path":"pages/home/home/index","query":{},"scene":1001,"referrerInfo":{},"mode":"default","apiCategory":"default"}}}
+INFO  2022-04-24 11:55:11,453 app.py     relaunch        306 ReLaunch: /pages/home/home/index
+DEBUG 2022-04-24 11:55:11,453 connection.py send            183 SEND > {"id":"2115f8ca-2cc7-4a92-8801-11c0eb8f9c1b","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:55:11,454 connection.py _on_message     232 RECV < {"id":"2115f8ca-2cc7-4a92-8801-11c0eb8f9c1b","result":{"pageId":11,"path":"package1/pages/classroom/detail/index","query":{"id":"80","type":"text"}}}
+DEBUG 2022-04-24 11:55:11,455 connection.py send            183 SEND > {"id":"bc70bd14-8cc6-4fc2-83e5-2e406d564178","method":"App.callWxMethod","params":{"method":"getAccountInfoSync","args":[]}}
+DEBUG 2022-04-24 11:55:11,456 connection.py _on_message     232 RECV < {"id":"bc70bd14-8cc6-4fc2-83e5-2e406d564178","result":{"result":{"miniProgram":{"appId":"wx45cfec5a12afe345","envVersion":"develop","version":""}}}}
+DEBUG 2022-04-24 11:55:11,457 connection.py send            183 SEND > {"id":"908d6e58-ef6b-4b7c-bb0d-a6477c3d2e2e","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-04-24 11:55:11,498 connection.py _on_message     232 RECV < {"id":"908d6e58-ef6b-4b7c-bb0d-a6477c3d2e2e","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-04-24 11:55:12,126 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":12,"path":"pages/home/home/index","query":{},"openType":"reLaunch","__ts__":1650772512086},1650772512086]}}
+INFO  2022-04-24 11:55:12,126 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 12, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1650772512086}, 1650772512086]}
+DEBUG 2022-04-24 11:55:12,127 connection.py send            183 SEND > {"id":"580adc99-8e02-4c71-aa0f-1c39bb87a74f","method":"App.callWxMethod","params":{"method":"getSystemInfoSync","args":[]}}
+DEBUG 2022-04-24 11:55:12,133 connection.py _on_message     230 RECV < {"id":"580adc99-8e02-4c71-aa0f-1c39bb87a74f","result":{"result":{"model":"iPhone 12/13 Pro Max","pixelRatio":3,"windowWidth":428,"windowHeight":753,"system":"iOS 10.0.1","language":"zh_CN","version":"8.0.5","deviceOrientation":"portrait","screenWidth":428,"screenHeight":926,"SDKVersion":"2.23.2","brand":"devtools","fontSizeSetting":16,"benchmarkLevel":1,"batteryLevel":100,"statusBarHeight":47,"bluetoothEnabled":true,"locationEnabled":true,"wifiEnabled":true,"cameraAuthorized":true,"locationAuthorized":tr...
+DEBUG 2022-04-24 11:55:12,135 connection.py send            183 SEND > {"id":"2674b056-3f81-400f-a474-c315a9906f08","method":"App.callFunction","params":{"functionDeclaration":"function () {return __wxConfig}","args":[]}}
+DEBUG 2022-04-24 11:55:12,139 connection.py _on_message     230 RECV < {"id":"2674b056-3f81-400f-a474-c315a9906f08","result":{"result":{"pages":["pages/home/home/index","pages/home/startpage/index","pages/message/home/index","pages/message/chat/index","pages/task/home/index","pages/mine/home/index","pages/mine/patient/list/index","pages/mine/patient/add/index","pages/mine/patient/bindcard/index","pages/mine/patient/detail/index","pages/auth/user_info/index","package1/pages/signservice/list/index","package1/pages/signservice/detail/index","package1/pages/signservice/selectdo...
+DEBUG 2022-04-24 11:55:12,150 minitest.py _miniSetUp      286 =========Current case：test_get_all_pages_path=========
+INFO  2022-04-24 11:55:12,151 app.py     relaunch        306 ReLaunch: /pages/home/home/index
+DEBUG 2022-04-24 11:55:12,151 connection.py send            183 SEND > {"id":"d67d7f3f-a556-459e-9ef4-5ffcc24bbf35","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-04-24 11:55:12,166 connection.py _on_message     232 RECV < {"id":"d67d7f3f-a556-459e-9ef4-5ffcc24bbf35","result":{"result":{"errMsg":"reLaunch:ok"}}}
+DEBUG 2022-04-24 11:55:12,805 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":13,"path":"pages/home/home/index","query":{},"openType":"reLaunch","__ts__":1650772512781},1650772512781]}}
+INFO  2022-04-24 11:55:12,806 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 13, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'reLaunch', '__ts__': 1650772512781}, 1650772512781]}
+INFO  2022-04-24 11:55:12,808 minitest.py capture         548 capture setup.png
+DEBUG 2022-04-24 11:55:12,809 connection.py send            183 SEND > {"id":"19986e1f-93f0-4a62-8c44-b7175070e6f1","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-04-24 11:55:15,219 connection.py _on_message     230 RECV < {"id":"19986e1f-93f0-4a62-8c44-b7175070e6f1","result":{"data":"iVBORw0KGgoAAAANSUhEUgAABC4AAAdbCAIAAAD2Sm0eAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvfmTXUd2JnZO5l3fWnthI0Bwa5JNstnsXS2pNTMeW7JiQjOhkCZifvCE5HCE/yqHHbY1WsIzMZZH8vR4utXqRWz1ziYJkNhRQAG1vv3dLfMc/5D33ndfVQEoFAtAVSG/AA9P5c38Mm/ezPvy3JMLvvNf/08AAABEZObD1S2zZbbMltkyW2bLbJkts2W2zJZ5T10u/9s/BAsLCwsLCwsLCwsLi6cLAQCIaKWVVlpppZVWWmmllVZa+TQlfuE7f8bMiMAMiPgEdMtsmS2zZbbMltkyW2bLbJkts2XeqQtmRsRK6KHrltkyW2bLbJkts2W2zJbZMltmy7xTL70iCAAAcLi6ZbbMltkyW2bLbJkts2W2zJbZMu...
+INFO  2022-04-24 11:55:15,220 app.py     redirect_to     288 RedirectTo: /pages/home/home/index
+DEBUG 2022-04-24 11:55:15,223 connection.py send            183 SEND > {"id":"e9060074-73f3-4da6-a1ea-57b45ebc1a8e","method":"App.callWxMethod","params":{"method":"redirectTo","args":[{"url":"/pages/home/home/index"}]}}
+DEBUG 2022-04-24 11:55:15,248 connection.py _on_message     232 RECV < {"id":"e9060074-73f3-4da6-a1ea-57b45ebc1a8e","result":{"result":{"errMsg":"redirectTo:ok"}}}
+DEBUG 2022-04-24 11:55:15,361 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":14,"path":"pages/home/home/index","query":{},"openType":"redirectTo","__ts__":1650772515334},1650772515334]}}
+INFO  2022-04-24 11:55:15,361 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 14, 'path': 'pages/home/home/index', 'query': {}, 'openType': 'redirectTo', '__ts__': 1650772515334}, 1650772515334]}
+DEBUG 2022-04-24 11:55:15,362 connection.py send            183 SEND > {"id":"41b02b14-9653-46f5-9a13-f647ccd5734b","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:55:15,364 connection.py _on_message     232 RECV < {"id":"41b02b14-9653-46f5-9a13-f647ccd5734b","result":{"pageId":14,"path":"pages/home/home/index","query":{}}}
+INFO  2022-04-24 11:55:15,365 page.py    _get_elements_by_css 445 try to get elements: view.search-box[text(contains("查询科普"))]
+DEBUG 2022-04-24 11:55:15,366 connection.py send            183 SEND > {"id":"cb121291-81e9-4bad-a1ab-fbe0cc27ef11","method":"Page.getElements","params":{"selector":"view.search-box[text(contains(\"\u67e5\u8be2\u79d1\u666e\"))]","pageId":14}}
+DEBUG 2022-04-24 11:55:15,376 connection.py _on_message     232 RECV < {"id":"cb121291-81e9-4bad-a1ab-fbe0cc27ef11","result":{"elements":[{"elementId":"575d5ce9-69fe-4107-94be-1e33e07a10a5","tagName":"view"}]}}
+INFO  2022-04-24 11:55:16,388 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000160A688ECE0>]
+DEBUG 2022-04-24 11:55:16,389 connection.py send            183 SEND > {"id":"cefa87f5-44ee-4135-a2d9-380b28dd2481","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"575d5ce9-69fe-4107-94be-1e33e07a10a5","pageId":14}}
+DEBUG 2022-04-24 11:55:16,393 connection.py _on_message     232 RECV < {"id":"cefa87f5-44ee-4135-a2d9-380b28dd2481","result":{"styles":["auto"]}}
+DEBUG 2022-04-24 11:55:16,394 connection.py send            183 SEND > {"id":"bee466a7-481e-4fd9-98ca-f96962c54bf5","method":"Element.tap","params":{"elementId":"575d5ce9-69fe-4107-94be-1e33e07a10a5","pageId":14}}
+DEBUG 2022-04-24 11:55:16,435 connection.py _on_message     232 RECV < {"id":"bee466a7-481e-4fd9-98ca-f96962c54bf5","result":{}}
+DEBUG 2022-04-24 11:55:16,785 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":15,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"},"openType":"navigateTo","__ts__":1650772516758},1650772516758]}}
+INFO  2022-04-24 11:55:16,786 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 15, 'path': 'package1/pages/classroom/search/index', 'query': {'searchType': '3'}, 'openType': 'navigateTo', '__ts__': 1650772516758}, 1650772516758]}
+DEBUG 2022-04-24 11:55:17,439 connection.py send            183 SEND > {"id":"f9fe07fd-2e35-453f-8235-c252b4819195","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:55:17,440 connection.py _on_message     232 RECV < {"id":"f9fe07fd-2e35-453f-8235-c252b4819195","result":{"pageId":15,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+INFO  2022-04-24 11:55:17,442 page.py    _get_elements_by_css 445 try to get elements: input.search-box[text(contains("搜索疾病/问题"))]
+DEBUG 2022-04-24 11:55:17,442 connection.py send            183 SEND > {"id":"560dbb04-eaf6-42a1-b3e6-de78735960fb","method":"Page.getElements","params":{"selector":"input.search-box[text(contains(\"\u641c\u7d22\u75be\u75c5/\u95ee\u9898\"))]","pageId":15}}
+DEBUG 2022-04-24 11:55:17,444 connection.py _on_message     232 RECV < {"id":"560dbb04-eaf6-42a1-b3e6-de78735960fb","result":{"elements":[{"elementId":"97f5a8fb-80f8-4d51-ac9e-668f6655d89d","tagName":"input"}]}}
+INFO  2022-04-24 11:55:18,448 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x00000160A688D330>]
+DEBUG 2022-04-24 11:55:18,448 connection.py send            183 SEND > {"id":"51520f53-a4b8-420b-bdad-ab07277420c3","method":"Element.callFunction","params":{"functionName":"input.input","args":["\u5fc3\u8840\u7ba1"],"elementId":"97f5a8fb-80f8-4d51-ac9e-668f6655d89d","pageId":15}}
+DEBUG 2022-04-24 11:55:18,461 connection.py _on_message     232 RECV < {"id":"51520f53-a4b8-420b-bdad-ab07277420c3","result":{}}
+DEBUG 2022-04-24 11:55:18,462 connection.py send            183 SEND > {"id":"12ca3bad-4484-4494-8d6c-38eb9a66c5ad","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:55:18,464 connection.py _on_message     232 RECV < {"id":"12ca3bad-4484-4494-8d6c-38eb9a66c5ad","result":{"pageId":15,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+INFO  2022-04-24 11:55:18,465 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-04-24 11:55:18,465 connection.py send            183 SEND > {"id":"79d9a6f4-e174-46c2-acad-a4e88d354818","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":15}}
+DEBUG 2022-04-24 11:55:18,467 connection.py _on_message     232 RECV < {"id":"79d9a6f4-e174-46c2-acad-a4e88d354818","result":{"elements":[]}}
+WARNI 2022-04-24 11:55:19,470 page.py    _get_elements_by_css 450 Could not found any element 'rich-text[text(contains("测试患教资料"))]' you need
+INFO  2022-04-24 11:55:19,723 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-04-24 11:55:19,723 connection.py send            183 SEND > {"id":"cf27661c-de16-4ccf-b36c-55b294436dbe","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":15}}
+DEBUG 2022-04-24 11:55:19,726 connection.py _on_message     232 RECV < {"id":"cf27661c-de16-4ccf-b36c-55b294436dbe","result":{"elements":[{"elementId":"3c1f6d03-ea4b-48b4-a020-140431bdcbd2","tagName":"rich-text"},{"elementId":"cd9a4252-cad2-4652-85f3-ad7bd9c1b11c","tagName":"rich-text"},{"elementId":"3c66b7ae-cdb1-4c31-860e-579fc96862e7","tagName":"rich-text"}]}}
+INFO  2022-04-24 11:55:20,732 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000160A688F730>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000160A688CFA0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000160A688EC50>]
+DEBUG 2022-04-24 11:55:20,732 connection.py send            183 SEND > {"id":"4a4e9c82-1ca4-4c31-af06-12cff925bd6e","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:55:20,735 connection.py _on_message     232 RECV < {"id":"4a4e9c82-1ca4-4c31-af06-12cff925bd6e","result":{"pageId":15,"path":"package1/pages/classroom/search/index","query":{"searchType":"3"}}}
+INFO  2022-04-24 11:55:20,736 page.py    _get_elements_by_css 445 try to get elements: rich-text[text(contains("测试患教资料"))]
+DEBUG 2022-04-24 11:55:20,736 connection.py send            183 SEND > {"id":"4068a54a-f8cb-4091-9999-676b8186ff67","method":"Page.getElements","params":{"selector":"rich-text[text(contains(\"\u6d4b\u8bd5\u60a3\u6559\u8d44\u6599\"))]","pageId":15}}
+DEBUG 2022-04-24 11:55:20,738 connection.py _on_message     232 RECV < {"id":"4068a54a-f8cb-4091-9999-676b8186ff67","result":{"elements":[{"elementId":"3c1f6d03-ea4b-48b4-a020-140431bdcbd2","tagName":"rich-text"},{"elementId":"cd9a4252-cad2-4652-85f3-ad7bd9c1b11c","tagName":"rich-text"},{"elementId":"3c66b7ae-cdb1-4c31-860e-579fc96862e7","tagName":"rich-text"}]}}
+INFO  2022-04-24 11:55:21,748 page.py    _get_elements_by_css 452 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000160A688F040>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000160A688F0A0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000160A688EB30>]
+DEBUG 2022-04-24 11:55:21,749 connection.py send            183 SEND > {"id":"8bd0bc9b-099d-42a5-88e5-66d027e3fc76","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"3c1f6d03-ea4b-48b4-a020-140431bdcbd2","pageId":15}}
+DEBUG 2022-04-24 11:55:21,753 connection.py _on_message     232 RECV < {"id":"8bd0bc9b-099d-42a5-88e5-66d027e3fc76","result":{"styles":["auto"]}}
+DEBUG 2022-04-24 11:55:21,753 connection.py send            183 SEND > {"id":"41618fb3-e4fc-4912-a564-11b21ac81333","method":"Element.tap","params":{"elementId":"3c1f6d03-ea4b-48b4-a020-140431bdcbd2","pageId":15}}
+DEBUG 2022-04-24 11:55:21,808 connection.py _on_message     232 RECV < {"id":"41618fb3-e4fc-4912-a564-11b21ac81333","result":{}}
+DEBUG 2022-04-24 11:55:22,137 connection.py _on_message     232 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":16,"path":"package1/pages/classroom/detail/index","query":{"id":"80","type":"text"},"openType":"navigateTo","__ts__":1650772522108},1650772522109]}}
+INFO  2022-04-24 11:55:22,137 app.py     _on_route_changed 451 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 16, 'path': 'package1/pages/classroom/detail/index', 'query': {'id': '80', 'type': 'text'}, 'openType': 'navigateTo', '__ts__': 1650772522108}, 1650772522109]}
+DEBUG 2022-04-24 11:55:22,821 minitest.py _miniTearDown   512 =========Current case Down：test_get_all_pages_path=========
+INFO  2022-04-24 11:55:22,833 minitest.py capture         548 capture teardown.png
+DEBUG 2022-04-24 11:55:22,834 connection.py send            183 SEND > {"id":"651695db-8a61-4bb3-b20e-24df50925599","method":"App.captureScreenshot","params":{}}
+DEBUG 2022-04-24 11:55:23,480 connection.py _on_message     230 RECV < {"id":"651695db-8a61-4bb3-b20e-24df50925599","result":{"data":"iVBORw0KGgoAAAANSUhEUgAABC4AAAgoCAIAAACNtGKYAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3WlYE1fbB/ATEowGGhBBWQUBC5alAhYrWgvUBVFErEu1FX0qRVpFaQWsgAKiVtz3rWoVtfpWWhdaatHHpVZUVKiKFkFQQBAlKkSIBBLyfhidZxogBAgk6v939QMzmcwMi73mn3Pu+7BkMhkBAAAAAADoWFrqvgEAAAAAAHgTIYoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAIAaIIoAAAAAAI...
+DEBUG 2022-04-24 11:55:23,489 connection.py send            183 SEND > {"id":"787c27c1-7dcb-4e8f-8ff2-ed13ba59fcc1","method":"App.getCurrentPage","params":{}}
+DEBUG 2022-04-24 11:55:23,489 connection.py _on_message     232 RECV < {"id":"787c27c1-7dcb-4e8f-8ff2-ed13ba59fcc1","result":{"pageId":16,"path":"package1/pages/classroom/detail/index","query":{"id":"80","type":"text"}}}
+DEBUG 2022-04-24 11:55:23,495 connection.py send            183 SEND > {"id":"77bf08f1-b319-4c7f-b713-343e19cca65e","method":"Page.getData","params":{"pageId":16}}
+DEBUG 2022-04-24 11:55:23,497 connection.py _on_message     230 RECV < {"id":"77bf08f1-b319-4c7f-b713-343e19cca65e","result":{"data":{"id":"80","type":"text","showShare":false,"detail":{"authorDeptId":"72","authorDeptName":"心血管内科","changeFlag":0,"content":"<div>您好，最近天气转凉，请注意保暖。预防感冒与流行性疾病。</div>","coverUrl":"https://ustatic.med.gzhc365.com/fss/publicfile/39490df00173d32d4e5aa7f73c4bef0193d5b0bd75cf4b0f2ae6357784b9196f.jpg","createTime":"2021-03-18 09:45:26","deptId":"72","deptName":"心血管内科","deptVo":{"createTime":"2021-03-17 17:29:28","deptName":"心血管内科","deptNo":"002","deptTy...
